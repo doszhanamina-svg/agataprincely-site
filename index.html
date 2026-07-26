@@ -640,6 +640,192 @@ function playHeroVSL(){
 
 
 
+
+<!-- LOCATIONS SLIDER -->
+<section style="padding:80px 0;background:var(--white);overflow:hidden;">
+  <div style="padding:0 72px;margin-bottom:48px;">
+    <p style="font-size:11px;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:var(--warm);margin-bottom:16px;">Proposal Locations</p>
+    <h2 style="font-family:var(--serif);font-size:clamp(28px,3vw,44px);font-weight:400;color:var(--ink);line-height:1.18;margin:0;">
+      I know every spot.<br><em style="font-style:italic;color:var(--warm);">I've proposed at all of them.</em>
+    </h2>
+  </div>
+
+  <!-- Slider track -->
+  <div style="position:relative;">
+    <div id="loc-track" style="display:flex;gap:20px;padding:0 72px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;-ms-overflow-style:none;cursor:grab;">
+
+      <!-- Card 1: Bow Bridge -->
+      <div style="flex:0 0 340px;scroll-snap-align:start;">
+        <div style="height:420px;overflow:hidden;border-radius:0;margin-bottom:16px;">
+          <img src="loc-bow-bridge.jpg" alt="Bow Bridge, Central Park"
+            style="width:100%;height:100%;object-fit:cover;object-position:center;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'">
+        </div>
+        <p style="font-family:var(--serif);font-size:18px;font-weight:400;color:var(--ink);margin:0 0 4px;">Bow Bridge</p>
+        <p style="font-size:12px;color:var(--mist);margin:0;letter-spacing:0.06em;text-transform:uppercase;">Central Park · Most Romantic</p>
+      </div>
+
+      <!-- Card 2: San Remo -->
+      <div style="flex:0 0 340px;scroll-snap-align:start;">
+        <div style="height:420px;overflow:hidden;margin-bottom:16px;">
+          <img src="loc-san-remo.jpg" alt="San Remo Buildings, Central Park"
+            style="width:100%;height:100%;object-fit:cover;object-position:center;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'">
+        </div>
+        <p style="font-family:var(--serif);font-size:18px;font-weight:400;color:var(--ink);margin:0 0 4px;">San Remo View</p>
+        <p style="font-size:12px;color:var(--mist);margin:0;letter-spacing:0.06em;text-transform:uppercase;">Central Park · Iconic Skyline</p>
+      </div>
+
+      <!-- Card 3: Bethesda Terrace -->
+      <div style="flex:0 0 340px;scroll-snap-align:start;">
+        <div style="height:420px;overflow:hidden;margin-bottom:16px;">
+          <img src="loc-bethesda.jpg" alt="Bethesda Terrace, Central Park"
+            style="width:100%;height:100%;object-fit:cover;object-position:center;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'">
+        </div>
+        <p style="font-family:var(--serif);font-size:18px;font-weight:400;color:var(--ink);margin:0 0 4px;">Bethesda Terrace</p>
+        <p style="font-size:12px;color:var(--mist);margin:0;letter-spacing:0.06em;text-transform:uppercase;">Central Park · Golden Architecture</p>
+      </div>
+
+      <!-- Card 4: Cat Rock / Skyline -->
+      <div style="flex:0 0 340px;scroll-snap-align:start;">
+        <div style="height:420px;overflow:hidden;margin-bottom:16px;">
+          <img src="loc-skyline.jpg" alt="Cat Rock, Central Park"
+            style="width:100%;height:100%;object-fit:cover;object-position:center;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'">
+        </div>
+        <p style="font-family:var(--serif);font-size:18px;font-weight:400;color:var(--ink);margin:0 0 4px;">Cat Rock</p>
+        <p style="font-size:12px;color:var(--mist);margin:0;letter-spacing:0.06em;text-transform:uppercase;">Central Park · Hidden & Intimate</p>
+      </div>
+
+      <!-- Card 5: Brooklyn Bridge View -->
+      <div style="flex:0 0 340px;scroll-snap-align:start;">
+        <div style="height:420px;overflow:hidden;margin-bottom:16px;">
+          <img src="loc-brooklyn-bridge.jpg" alt="Brooklyn Bridge View"
+            style="width:100%;height:100%;object-fit:cover;object-position:center;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'">
+        </div>
+        <p style="font-family:var(--serif);font-size:18px;font-weight:400;color:var(--ink);margin:0 0 4px;">Brooklyn Bridge View</p>
+        <p style="font-size:12px;color:var(--mist);margin:0;letter-spacing:0.06em;text-transform:uppercase;">Brooklyn · Classic NYC</p>
+      </div>
+
+      <!-- Card 6: Pier 17 -->
+      <div style="flex:0 0 340px;scroll-snap-align:start;">
+        <div style="height:420px;overflow:hidden;margin-bottom:16px;">
+          <img src="loc-pier17.jpg" alt="Pier 17"
+            style="width:100%;height:100%;object-fit:cover;object-position:center;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'">
+        </div>
+        <p style="font-family:var(--serif);font-size:18px;font-weight:400;color:var(--ink);margin:0 0 4px;">Pier 17</p>
+        <p style="font-size:12px;color:var(--mist);margin:0;letter-spacing:0.06em;text-transform:uppercase;">Lower Manhattan · Waterfront</p>
+      </div>
+
+      <!-- Card 7: Jersey City -->
+      <div style="flex:0 0 340px;scroll-snap-align:start;">
+        <div style="height:420px;overflow:hidden;margin-bottom:16px;">
+          <img src="loc-jersey-city.jpg" alt="Jersey City"
+            style="width:100%;height:100%;object-fit:cover;object-position:center;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'">
+        </div>
+        <p style="font-family:var(--serif);font-size:18px;font-weight:400;color:var(--ink);margin:0 0 4px;">Jersey City</p>
+        <p style="font-size:12px;color:var(--mist);margin:0;letter-spacing:0.06em;text-transform:uppercase;">Manhattan Skyline Backdrop</p>
+      </div>
+
+      <!-- Card 8: Robert Wagner Park -->
+      <div style="flex:0 0 340px;scroll-snap-align:start;">
+        <div style="height:420px;overflow:hidden;margin-bottom:16px;">
+          <img src="loc-wagner-park.jpg" alt="Robert Wagner Park"
+            style="width:100%;height:100%;object-fit:cover;object-position:center;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'">
+        </div>
+        <p style="font-family:var(--serif);font-size:18px;font-weight:400;color:var(--ink);margin:0 0 4px;">Robert Wagner Park</p>
+        <p style="font-size:12px;color:var(--mist);margin:0;letter-spacing:0.06em;text-transform:uppercase;">Battery Park · Statue of Liberty View</p>
+      </div>
+
+      <!-- Card 9: Pier 57 -->
+      <div style="flex:0 0 340px;scroll-snap-align:start;">
+        <div style="height:420px;overflow:hidden;margin-bottom:16px;">
+          <img src="loc-pier57.jpg" alt="Pier 57"
+            style="width:100%;height:100%;object-fit:cover;object-position:center;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'">
+        </div>
+        <p style="font-family:var(--serif);font-size:18px;font-weight:400;color:var(--ink);margin:0 0 4px;">Pier 57</p>
+        <p style="font-size:12px;color:var(--mist);margin:0;letter-spacing:0.06em;text-transform:uppercase;">Hudson River · Sunset Magic</p>
+      </div>
+
+      <!-- Card 10: DUMBO -->
+      <div style="flex:0 0 340px;scroll-snap-align:start;">
+        <div style="height:420px;overflow:hidden;margin-bottom:16px;">
+          <img src="loc-dumbo.jpg" alt="DUMBO Brooklyn"
+            style="width:100%;height:100%;object-fit:cover;object-position:center;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'">
+        </div>
+        <p style="font-family:var(--serif);font-size:18px;font-weight:400;color:var(--ink);margin:0 0 4px;">DUMBO</p>
+        <p style="font-size:12px;color:var(--mist);margin:0;letter-spacing:0.06em;text-transform:uppercase;">Brooklyn · Bridge + Skyline</p>
+      </div>
+
+    </div>
+
+    <!-- Scroll arrows -->
+    <button onclick="slideLeft()" aria-label="Previous" style="position:absolute;left:20px;top:50%;transform:translateY(-60%);width:48px;height:48px;border-radius:50%;background:var(--white);border:1px solid var(--stone);cursor:pointer;font-size:18px;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 12px rgba(0,0,0,0.1);z-index:2;">&#8592;</button>
+    <button onclick="slideRight()" aria-label="Next" style="position:absolute;right:20px;top:50%;transform:translateY(-60%);width:48px;height:48px;border-radius:50%;background:var(--white);border:1px solid var(--stone);cursor:pointer;font-size:18px;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 12px rgba(0,0,0,0.1);z-index:2;">&#8594;</button>
+  </div>
+
+  <!-- Dots -->
+  <div id="loc-dots" style="display:flex;justify-content:center;gap:8px;margin-top:32px;padding:0 72px;">
+    <button onclick="goToSlide(0)" class="loc-dot" style="width:8px;height:8px;border-radius:50%;background:var(--ink);border:none;cursor:pointer;padding:0;transition:all 0.2s;"></button>
+    <button onclick="goToSlide(1)" class="loc-dot" style="width:8px;height:8px;border-radius:50%;background:var(--mist);border:none;cursor:pointer;padding:0;transition:all 0.2s;"></button>
+    <button onclick="goToSlide(2)" class="loc-dot" style="width:8px;height:8px;border-radius:50%;background:var(--mist);border:none;cursor:pointer;padding:0;transition:all 0.2s;"></button>
+    <button onclick="goToSlide(3)" class="loc-dot" style="width:8px;height:8px;border-radius:50%;background:var(--mist);border:none;cursor:pointer;padding:0;transition:all 0.2s;"></button>
+    <button onclick="goToSlide(4)" class="loc-dot" style="width:8px;height:8px;border-radius:50%;background:var(--mist);border:none;cursor:pointer;padding:0;transition:all 0.2s;"></button>
+    <button onclick="goToSlide(5)" class="loc-dot" style="width:8px;height:8px;border-radius:50%;background:var(--mist);border:none;cursor:pointer;padding:0;transition:all 0.2s;"></button>
+    <button onclick="goToSlide(6)" class="loc-dot" style="width:8px;height:8px;border-radius:50%;background:var(--mist);border:none;cursor:pointer;padding:0;transition:all 0.2s;"></button>
+    <button onclick="goToSlide(7)" class="loc-dot" style="width:8px;height:8px;border-radius:50%;background:var(--mist);border:none;cursor:pointer;padding:0;transition:all 0.2s;"></button>
+    <button onclick="goToSlide(8)" class="loc-dot" style="width:8px;height:8px;border-radius:50%;background:var(--mist);border:none;cursor:pointer;padding:0;transition:all 0.2s;"></button>
+    <button onclick="goToSlide(9)" class="loc-dot" style="width:8px;height:8px;border-radius:50%;background:var(--mist);border:none;cursor:pointer;padding:0;transition:all 0.2s;"></button>
+  </div>
+</section>
+
+<style>
+#loc-track::-webkit-scrollbar { display:none; }
+#loc-track { user-select:none; }
+</style>
+
+<script>
+var locTrack = document.getElementById('loc-track');
+var locDots = document.querySelectorAll('.loc-dot');
+var cardW = 360; // card width + gap
+var locCurrent = 0;
+var locTotal = 10;
+var locAuto;
+
+function updateDots(idx){
+  locDots.forEach(function(d,i){
+    d.style.background = i===idx ? 'var(--ink)' : 'var(--mist)';
+    d.style.width = i===idx ? '20px' : '8px';
+    d.style.borderRadius = i===idx ? '4px' : '50%';
+  });
+}
+
+function goToSlide(idx){
+  locCurrent = idx;
+  locTrack.scrollTo({left: idx * cardW, behavior:'smooth'});
+  updateDots(idx);
+}
+
+function slideRight(){
+  locCurrent = (locCurrent + 1) % locTotal;
+  goToSlide(locCurrent);
+}
+
+function slideLeft(){
+  locCurrent = (locCurrent - 1 + locTotal) % locTotal;
+  goToSlide(locCurrent);
+}
+
+// Auto advance every 4 seconds
+locAuto = setInterval(slideRight, 4000);
+locTrack.addEventListener('mouseenter', function(){ clearInterval(locAuto); });
+locTrack.addEventListener('mouseleave', function(){ locAuto = setInterval(slideRight, 4000); });
+
+// Sync dots on manual scroll
+locTrack.addEventListener('scroll', function(){
+  var idx = Math.round(locTrack.scrollLeft / cardW);
+  if(idx !== locCurrent){ locCurrent = idx; updateDots(idx); }
+});
+</script>
+
+
 <!-- PROCESS -->
 <section class="process-section">
   <p class="section-label">How it works</p>
