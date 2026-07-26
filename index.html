@@ -571,34 +571,34 @@ footer {
       </div>
     </div>
   </div>
-  <div class="hero-right" style="position:relative;overflow:hidden;cursor:pointer;" id="hero-vsl" onclick="openHeroVSL()">
-    <!-- Photo thumbnail -->
-    <img src="hero-photo.jpg" alt="NYC Proposal" id="hero-thumb"
-      style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center top;">
-    <!-- Overlay -->
-    <div style="position:absolute;inset:0;background:rgba(0,0,0,0.28);"></div>
-    <!-- Play button center -->
-    <div style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);text-align:center;z-index:2;">
-      <div style="width:88px;height:88px;border-radius:50%;background:rgba(255,255,255,0.95);display:flex;align-items:center;justify-content:center;margin:0 auto 14px;box-shadow:0 8px 40px rgba(0,0,0,0.3);transition:transform 0.2s;" onmouseover="this.style.transform='scale(1.08)'" onmouseout="this.style.transform='scale(1)'" >
-        <svg width="32" height="32" viewBox="0 0 24 24" fill="#1C1A18" style="margin-left:5px"><polygon points="5,3 19,12 5,21"/></svg>
-      </div>
-      <p style="color:#fff;font-family:Georgia,serif;font-size:14px;font-style:italic;letter-spacing:0.06em;margin:0;text-shadow:0 1px 4px rgba(0,0,0,0.5);">Watch how this moment was captured</p>
+  <div class="hero-right" style="position:relative;overflow:hidden;background:#000;">
+    <!-- VSL: photo + play button -->
+    <div id="hvsl" style="position:absolute;inset:0;z-index:2;">
+      <!-- photo -->
+      <img src="hero-photo.jpg" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;">
+      <!-- dark overlay -->
+      <div style="position:absolute;inset:0;background:rgba(0,0,0,0.32);"></div>
+      <!-- play button -->
+      <button onclick="playHeroVSL()" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);background:none;border:none;cursor:pointer;text-align:center;padding:0;">
+        <div style="width:90px;height:90px;border-radius:50%;background:rgba(255,255,255,0.95);display:flex;align-items:center;justify-content:center;margin:0 auto 12px;box-shadow:0 4px 32px rgba(0,0,0,0.4);">
+          <svg width="32" height="32" viewBox="0 0 24 24" fill="#1C1A18" style="margin-left:5px"><polygon points="5,3 19,12 5,21"/></svg>
+        </div>
+        <span style="color:#fff;font-family:Georgia,serif;font-size:13px;font-style:italic;letter-spacing:0.06em;text-shadow:0 1px 6px rgba(0,0,0,0.6);">Watch how this moment was captured</span>
+      </button>
     </div>
-    <!-- iframe injected on click -->
-    <div id="hero-iframe" style="display:none;position:absolute;inset:0;z-index:3;"></div>
+    <!-- iframe appears after click -->
+    <div id="hvsl-frame" style="display:none;position:absolute;inset:0;z-index:3;">
+      <iframe id="hvsl-iframe" src="" frameborder="0" allow="autoplay;encrypted-media;fullscreen" allowfullscreen style="width:100%;height:100%;border:0;"></iframe>
+    </div>
   </div>
-  <script>
-    function openHeroVSL(){
-      document.getElementById('hero-thumb').style.display='none';
-      document.getElementById('hero-vsl').querySelector('div[style*=rgba]').style.display='none';
-      document.getElementById('hero-vsl').querySelector('div[style*=50%]').style.display='none';
-      var f=document.getElementById('hero-iframe');
-      f.style.display='block';
-      f.innerHTML='<iframe src="https://www.youtube.com/embed/J_jUb7eeFXc?autoplay=1&rel=0&modestbranding=1&playsinline=1" frameborder="0" allow="autoplay;encrypted-media;fullscreen" allowfullscreen style="position:absolute;inset:0;width:100%;height:100%;border:0;"></iframe>';
-      document.getElementById('hero-vsl').onclick=null;
-    }
-  </script>
 </section>
+<script>
+function playHeroVSL(){
+  document.getElementById('hvsl').style.display='none';
+  document.getElementById('hvsl-frame').style.display='block';
+  document.getElementById('hvsl-iframe').src='https://www.youtube.com/embed/J_jUb7eeFXc?autoplay=1&rel=0&modestbranding=1&playsinline=1';
+}
+</script>
 
 <!-- STRESS STRIP -->
 <div class="stress-strip">
