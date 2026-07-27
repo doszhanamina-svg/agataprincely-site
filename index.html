@@ -574,7 +574,7 @@ footer {
     <!-- VSL: photo + play button -->
     <div id="hvsl" style="position:absolute;inset:0;z-index:2;">
       <!-- photo -->
-      <img src="hero-photo.jpg" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;">
+      <img src="hero-photo.jpg" alt="Couple embracing during a surprise proposal in Central Park, NYC" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;">
       <!-- dark overlay -->
       <div style="position:absolute;inset:0;background:rgba(0,0,0,0.32);"></div>
       <!-- play button -->
@@ -907,7 +907,7 @@ function playHeroVSL(){
     <h2 class="section-headline">Is your date still available?</h2>
     <p class="form-intro">Fill in your date below — I'll tell you if it's still open and what we can do together. No commitment. No sales pitch. Just a quick answer.</p>
 
-    <form id="leadForm" name="proposals" netlify data-netlify="true" netlify-honeypot="bot-field">
+    <form id="leadForm" name="proposals" method="POST" data-netlify="true" netlify netlify-honeypot="bot-field">
       <input type="hidden" name="form-name" value="proposals"/>
       <p style="display:none"><input name="bot-field"/></p>
       <div class="form-grid">
@@ -941,9 +941,9 @@ function playHeroVSL(){
           <label for="package">Package Interest</label>
           <select id="package" name="package">
             <option value="">Select a package</option>
-            <option value="the-moment">The Moment — $450</option>
+            <option value="the-moment">The Moment — $450 ★</option>
             <option value="the-story">The Story — $600</option>
-            <option value="full-experience">The Full Experience — $750 ★</option>
+            <option value="full-experience">The Full Experience — $750</option>
             <option value="unsure">Not sure yet</option>
           </select>
         </div>
@@ -1051,12 +1051,21 @@ document.querySelectorAll('.faq-q').forEach(btn => {
 const form = document.getElementById('leadForm');
 if (form) {
   form.addEventListener('submit', function(e) {
-    const isNetlify = form.getAttribute('netlify') !== null || form.getAttribute('data-netlify') !== null;
-    if (!isNetlify) {
-      e.preventDefault();
+    e.preventDefault();
+    const data = new FormData(form);
+    fetch('/', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+      body: new URLSearchParams(data).toString()
+    })
+    .then(function(res) {
+      if (!res.ok) throw new Error('Bad response: ' + res.status);
       form.style.display = 'none';
       document.getElementById('formSuccess').style.display = 'block';
-    }
+    })
+    .catch(function() {
+      alert('Something went wrong sending your request. Please text me directly at +1 (858) 353-6287.');
+    });
   });
 }
 </script>
