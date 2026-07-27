@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>NYC Proposal Photographer — Agataprincely</title>
+<title>NYC Proposal & Engagement Photographer — Agataprincely</title>
 <meta name="description" content="Secret proposal photographer in NYC. I scout the spot, stay hidden, and capture the exact moment she says yes. Packages from $450."/>
 <style>
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -275,8 +275,8 @@ nav {
 .offer-section .section-label { text-align: center; }
 .offer-section .section-headline { text-align: center; max-width: 480px; margin: 0 auto 56px; }
 .offer-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2px; background: var(--stone); }
-.offer-card { background: var(--ivory); padding: 44px 32px; position: relative; }
-.offer-card.featured { background: var(--ink); color: var(--white); }
+.offer-card { background: var(--ivory); padding: 44px 32px; position: relative; display: flex; flex-direction: column; }
+.offer-card.featured { background: var(--ink); color: var(--white); display: flex; flex-direction: column; }
 .offer-tag {
   font-size: 10px; font-weight: 600; letter-spacing: 0.16em;
   text-transform: uppercase; color: var(--accent);
@@ -295,7 +295,7 @@ nav {
 }
 .offer-card.featured .offer-price { color: var(--accent); }
 .offer-price sup { font-size: 22px; vertical-align: super; }
-.offer-features { list-style: none; margin-bottom: 36px; }
+.offer-features { list-style: none; margin-bottom: 36px; flex: 1; }
 .offer-features li {
   font-size: 14px; font-weight: 400; line-height: 1.6;
   color: var(--body-color); padding: 10px 0;
@@ -495,7 +495,7 @@ footer {
   .hero-left { padding: 40px 24px 48px; }
   .hero-headline { font-size: clamp(34px, 9vw, 48px); }
   .hero-headline-accent { font-size: clamp(32px, 8vw, 44px); }
-  .hero-right { height: 65vw; }
+  .hero-right { height: auto; aspect-ratio: 4/5; }
   .hero-trust { gap: 20px; }
 
   .stress-strip { padding: 18px 24px; flex-direction: column; align-items: flex-start; gap: 8px; }
@@ -508,7 +508,7 @@ footer {
 
   .section-grid { grid-template-columns: 1fr; gap: 40px; }
   .about-grid { grid-template-columns: 1fr; gap: 32px; }
-  .about-photo { aspect-ratio: 3/2; }
+  .about-photo { aspect-ratio: 4/5; }
 
   .process-steps { grid-template-columns: 1fr 1fr; }
   .process-section { padding: 64px 24px; }
@@ -534,8 +534,7 @@ footer {
 <nav>
   <a href="#" class="nav-logo">Agataprincely</a>
   <div class="nav-right">
-    <a href="https://wa.me/18583536287" class="nav-phone" target="_blank">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12 0C5.373 0 0 5.373 0 12c0 2.123.554 4.117 1.528 5.845L0 24l6.335-1.505A11.945 11.945 0 0012 24c6.627 0 12-5.373 12-12S18.627 0 12 0zm0 21.818a9.818 9.818 0 01-5.006-1.369l-.36-.214-3.732.887.948-3.625-.234-.373A9.818 9.818 0 0112 2.182c5.424 0 9.818 4.394 9.818 9.818 0 5.425-4.394 9.818-9.818 9.818z"/></svg>
+    <a href="sms:+18583536287" class="nav-phone">
       +1 (858) 353-6287
     </a>
     <a href="#book" class="nav-cta">Check Availability</a>
@@ -545,12 +544,12 @@ footer {
 <!-- HERO -->
 <section class="hero">
   <div class="hero-left">
-    <p class="hero-eyebrow">New York City · Secret Proposals · Engagements</p>
+    <p class="hero-eyebrow">New York City · Surprise Proposals · Engagement Sessions</p>
     <h1 class="hero-headline">You focus on the question.</h1>
     <span class="hero-headline-accent">I handle everything else.</span>
     <span class="hero-price-badge">Packages from $450</span>
     <p class="hero-sub">
-      I scout the spot. I find the light window. I stay hidden — so she never sees me. When she says yes, you'll have photos that look like the city planned it just for you.
+      Whether it's a surprise proposal or an engagement session — I scout the spot, find the light, and capture the moment exactly as it happens. Real. Unscripted. Yours.
     </p>
     <div class="hero-cta-group">
       <a href="#book" class="btn-primary">Plan My Proposal</a>
@@ -558,7 +557,7 @@ footer {
     </div>
     <div class="hero-trust">
       <div class="trust-item">
-        <div class="trust-number">100+</div>
+        <div class="trust-number">150+</div>
         <div class="trust-label">Proposals captured</div>
       </div>
       <div class="trust-item">
@@ -614,11 +613,11 @@ function playHeroVSL(){
     <div class="reveal">
       <p class="section-label">The real problem</p>
       <h2 class="section-headline">
-        Planning a proposal in NYC is <em>overwhelming.</em><br>It doesn't have to be.
+        Planning a proposal or engagement session in NYC? <em>I've done this 150+ times.</em><br>Let me make it easy.
       </h2>
       <p class="section-body">
-        Central Park has 843 acres. Weekend crowds can ruin any intimate moment. Golden hour lasts 40 minutes and changes by the week. And the fear of being discovered before the ring comes out keeps most people up at night.<br><br>
-        I've photographed 100+ proposals across New York. I know every hidden corner, every lighting window, every spot where the crowd disappears. You tell me your date — I build the entire plan around it.
+        Central Park has 843 acres. Weekend crowds can ruin any intimate moment. Golden hour lasts 40 minutes and changes by the week. Whether you're planning a surprise proposal or a couples engagement session — the logistics can feel overwhelming.<br><br>
+        I've photographed 150+ proposals and engagement sessions across New York and New Jersey — Central Park, DUMBO, Hoboken, Weehawken, Jersey City and 20+ other locations. I know every hidden corner, every lighting window, every spot where the crowd disappears. You tell me your date — I build the entire plan around it.
       </p>
     </div>
     <div class="pain-cards reveal">
@@ -632,7 +631,11 @@ function playHeroVSL(){
       </div>
       <div class="pain-card">
         <div class="pain-card-q">"I don't know how to get her to the spot naturally."</div>
-        <div class="pain-card-a">I help you craft a believable cover story and timing plan. We rehearse it over WhatsApp until you feel completely confident. <strong>Zero winging it.</strong></div>
+        <div class="pain-card-a">I help you craft a believable cover story and timing plan. We coordinate everything over text — until you feel completely confident. <strong>Zero winging it.</strong></div>
+      </div>
+      <div class="pain-card">
+        <div class="pain-card-q">"We want engagement photos but don't know where to go or how to make it feel natural."</div>
+        <div class="pain-card-a">I suggest the location, guide you through every moment, and make it feel like a walk in the park — not a photoshoot. <strong>No awkward posing. Just you two.</strong></div>
       </div>
     </div>
   </div>
@@ -642,7 +645,7 @@ function playHeroVSL(){
 
 
 <!-- LOCATIONS SLIDER -->
-<section style="padding:80px 0;background:var(--white);overflow:hidden;">
+<section style="padding:80px 0;background:var(--white);">
   <div style="padding:0 72px;margin-bottom:48px;">
     <p style="font-size:11px;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:var(--warm);margin-bottom:16px;">Proposal Locations</p>
     <h2 style="font-family:var(--serif);font-size:clamp(28px,3vw,44px);font-weight:400;color:var(--ink);line-height:1.18;margin:0;">
@@ -650,181 +653,99 @@ function playHeroVSL(){
     </h2>
   </div>
 
-  <!-- Slider track -->
-  <div style="position:relative;">
-    <div id="loc-track" style="display:flex;gap:20px;padding:0 72px;overflow-x:auto;scroll-snap-type:x mandatory;-webkit-overflow-scrolling:touch;scrollbar-width:none;-ms-overflow-style:none;cursor:grab;">
+  <div style="position:relative;overflow:hidden;">
+    <!-- Track -->
+    <div id="loc-track" style="display:flex;transition:transform 0.4s ease;will-change:transform;padding:0 72px;gap:20px;">
 
-      <!-- Card 1: Bow Bridge -->
-      <div style="flex:0 0 340px;scroll-snap-align:start;">
-        <div style="height:420px;overflow:hidden;border-radius:0;margin-bottom:16px;">
-          <img src="Central Park Lake.jpg" alt="Bow Bridge, Central Park"
-            style="width:100%;height:100%;object-fit:cover;object-position:center;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'">
-        </div>
-        <p style="font-family:var(--serif);font-size:18px;font-weight:400;color:var(--ink);margin:0 0 4px;">Bow Bridge</p>
-        <p style="font-size:12px;color:var(--mist);margin:0;letter-spacing:0.06em;text-transform:uppercase;">Central Park · Most Romantic</p>
-      </div>
-
-      <!-- Card 2: San Remo -->
-      <div style="flex:0 0 340px;scroll-snap-align:start;">
-        <div style="height:420px;overflow:hidden;margin-bottom:16px;">
-          <img src="Central Park San Remo Buildings.jpg" alt="San Remo Buildings, Central Park"
-            style="width:100%;height:100%;object-fit:cover;object-position:center;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'">
-        </div>
-        <p style="font-family:var(--serif);font-size:18px;font-weight:400;color:var(--ink);margin:0 0 4px;">San Remo View</p>
-        <p style="font-size:12px;color:var(--mist);margin:0;letter-spacing:0.06em;text-transform:uppercase;">Central Park · Iconic Skyline</p>
-      </div>
-
-      <!-- Card 3: Bethesda Terrace -->
-      <div style="flex:0 0 340px;scroll-snap-align:start;">
-        <div style="height:420px;overflow:hidden;margin-bottom:16px;">
-          <img src="Central Park Bethesda Terrace.jpg" alt="Bethesda Terrace, Central Park"
-            style="width:100%;height:100%;object-fit:cover;object-position:center;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'">
-        </div>
-        <p style="font-family:var(--serif);font-size:18px;font-weight:400;color:var(--ink);margin:0 0 4px;">Bethesda Terrace</p>
-        <p style="font-size:12px;color:var(--mist);margin:0;letter-spacing:0.06em;text-transform:uppercase;">Central Park · Golden Architecture</p>
-      </div>
-
-      <!-- Card 4: Cat Rock / Skyline -->
-      <div style="flex:0 0 340px;scroll-snap-align:start;">
-        <div style="height:420px;overflow:hidden;margin-bottom:16px;">
-          <img src="Central Park Cat Rock.jpg" alt="Cat Rock, Central Park"
-            style="width:100%;height:100%;object-fit:cover;object-position:center;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'">
-        </div>
-        <p style="font-family:var(--serif);font-size:18px;font-weight:400;color:var(--ink);margin:0 0 4px;">Cat Rock</p>
-        <p style="font-size:12px;color:var(--mist);margin:0;letter-spacing:0.06em;text-transform:uppercase;">Central Park · Hidden & Intimate</p>
-      </div>
-
-      <!-- Card 5: Brooklyn Bridge View -->
-      <div style="flex:0 0 340px;scroll-snap-align:start;">
-        <div style="height:420px;overflow:hidden;margin-bottom:16px;">
-          <img src="Brooklyn Bridge View.jpg" alt="Brooklyn Bridge View"
-            style="width:100%;height:100%;object-fit:cover;object-position:center;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'">
-        </div>
-        <p style="font-family:var(--serif);font-size:18px;font-weight:400;color:var(--ink);margin:0 0 4px;">Brooklyn Bridge View</p>
-        <p style="font-size:12px;color:var(--mist);margin:0;letter-spacing:0.06em;text-transform:uppercase;">Brooklyn · Classic NYC</p>
-      </div>
-
-      <!-- Card 6: Pier 17 -->
-      <div style="flex:0 0 340px;scroll-snap-align:start;">
-        <div style="height:420px;overflow:hidden;margin-bottom:16px;">
-          <img src="Pier 17.jpg" alt="Pier 17"
-            style="width:100%;height:100%;object-fit:cover;object-position:center;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'">
-        </div>
-        <p style="font-family:var(--serif);font-size:18px;font-weight:400;color:var(--ink);margin:0 0 4px;">Pier 17</p>
-        <p style="font-size:12px;color:var(--mist);margin:0;letter-spacing:0.06em;text-transform:uppercase;">Lower Manhattan · Waterfront</p>
-      </div>
-
-      <!-- Card 7: Jersey City -->
-      <div style="flex:0 0 340px;scroll-snap-align:start;">
-        <div style="height:420px;overflow:hidden;margin-bottom:16px;">
-          <img src="Jersey City.jpg" alt="Jersey City"
-            style="width:100%;height:100%;object-fit:cover;object-position:center;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'">
-        </div>
-        <p style="font-family:var(--serif);font-size:18px;font-weight:400;color:var(--ink);margin:0 0 4px;">Jersey City</p>
-        <p style="font-size:12px;color:var(--mist);margin:0;letter-spacing:0.06em;text-transform:uppercase;">Manhattan Skyline Backdrop</p>
-      </div>
-
-      <!-- Card 8: Robert Wagner Park -->
-      <div style="flex:0 0 340px;scroll-snap-align:start;">
-        <div style="height:420px;overflow:hidden;margin-bottom:16px;">
-          <img src="Robert Wagner Park.jpg" alt="Robert Wagner Park"
-            style="width:100%;height:100%;object-fit:cover;object-position:center;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'">
-        </div>
-        <p style="font-family:var(--serif);font-size:18px;font-weight:400;color:var(--ink);margin:0 0 4px;">Robert Wagner Park</p>
-        <p style="font-size:12px;color:var(--mist);margin:0;letter-spacing:0.06em;text-transform:uppercase;">Battery Park · Statue of Liberty View</p>
-      </div>
-
-      <!-- Card 9: Pier 57 -->
-      <div style="flex:0 0 340px;scroll-snap-align:start;">
-        <div style="height:420px;overflow:hidden;margin-bottom:16px;">
-          <img src="Pier 57.jpg" alt="Pier 57"
-            style="width:100%;height:100%;object-fit:cover;object-position:center;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'">
-        </div>
-        <p style="font-family:var(--serif);font-size:18px;font-weight:400;color:var(--ink);margin:0 0 4px;">Pier 57</p>
-        <p style="font-size:12px;color:var(--mist);margin:0;letter-spacing:0.06em;text-transform:uppercase;">Hudson River · Sunset Magic</p>
-      </div>
-
-      <!-- Card 10: DUMBO -->
-      <div style="flex:0 0 340px;scroll-snap-align:start;">
-        <div style="height:420px;overflow:hidden;margin-bottom:16px;">
-          <img src="Dumbo.jpg" alt="DUMBO Brooklyn"
-            style="width:100%;height:100%;object-fit:cover;object-position:center;transition:transform 0.4s;" onmouseover="this.style.transform='scale(1.04)'" onmouseout="this.style.transform='scale(1)'">
-        </div>
-        <p style="font-family:var(--serif);font-size:18px;font-weight:400;color:var(--ink);margin:0 0 4px;">DUMBO</p>
-        <p style="font-size:12px;color:var(--mist);margin:0;letter-spacing:0.06em;text-transform:uppercase;">Brooklyn · Bridge + Skyline</p>
-      </div>
+      <div class="loc-card"><div class="loc-img"><img src="Central Park Lake.jpg" alt="Bow Bridge"></div><p class="loc-name">Bow Bridge</p><p class="loc-sub">Central Park · Most Romantic</p></div>
+      <div class="loc-card"><div class="loc-img"><img src="Central Park San Remo Buildings.jpg" alt="San Remo View"></div><p class="loc-name">San Remo View</p><p class="loc-sub">Central Park · Iconic Skyline</p></div>
+      <div class="loc-card"><div class="loc-img"><img src="Central Park Bethesda Terrace.jpg" alt="Bethesda Terrace"></div><p class="loc-name">Bethesda Terrace</p><p class="loc-sub">Central Park · Golden Architecture</p></div>
+      <div class="loc-card"><div class="loc-img"><img src="Central Park Cat Rock.jpg" alt="Cat Rock"></div><p class="loc-name">Cat Rock</p><p class="loc-sub">Central Park · Hidden & Intimate</p></div>
+      <div class="loc-card"><div class="loc-img"><img src="Central Park Bow Bridge.jpg" alt="Bow Bridge 2"></div><p class="loc-name">Bow Bridge</p><p class="loc-sub">Central Park · Sunrise Light</p></div>
+      <div class="loc-card"><div class="loc-img"><img src="Brooklyn Bridge View.jpg" alt="Brooklyn Bridge"></div><p class="loc-name">Brooklyn Bridge View</p><p class="loc-sub">Brooklyn · Classic NYC</p></div>
+      <div class="loc-card"><div class="loc-img"><img src="Pier 17.jpg" alt="Pier 17"></div><p class="loc-name">Pier 17</p><p class="loc-sub">Lower Manhattan · Waterfront</p></div>
+      <div class="loc-card"><div class="loc-img"><img src="Jersey City.jpg" alt="Jersey City"></div><p class="loc-name">Jersey City</p><p class="loc-sub">Manhattan Skyline Backdrop</p></div>
+      <div class="loc-card"><div class="loc-img"><img src="Robert Wagner Park.jpg" alt="Robert Wagner Park"></div><p class="loc-name">Robert Wagner Park</p><p class="loc-sub">Battery Park · Statue of Liberty View</p></div>
+      <div class="loc-card"><div class="loc-img"><img src="Pier 57.jpg" alt="Pier 57"></div><p class="loc-name">Pier 57</p><p class="loc-sub">Hudson River · Sunset Magic</p></div>
+      <div class="loc-card"><div class="loc-img"><img src="Dumbo.jpg" alt="DUMBO"></div><p class="loc-name">DUMBO</p><p class="loc-sub">Brooklyn · Bridge + Skyline</p></div>
+      <div class="loc-card"><div class="loc-img"><img src="NYC_Subway_Fulton.jpg" alt="NYC Subway"></div><p class="loc-name">NYC Subway</p><p class="loc-sub">Fulton St · Urban & Editorial</p></div>
+      <div class="loc-card"><div class="loc-img"><img src="Brooklyn_Streets.jpg" alt="Brooklyn Streets"></div><p class="loc-name">Brooklyn Streets</p><p class="loc-sub">Brownstone NYC · Candid & Real</p></div>
+      <div class="loc-card"><div class="loc-img"><img src="Central_Park_Lake_2.jpg" alt="Central Park Lake"></div><p class="loc-name">Central Park Lake</p><p class="loc-sub">Central Park · Hidden Waterside</p></div>
+      <div class="loc-card"><div class="loc-img"><img src="Central_Park_Bethesda_2.jpg" alt="Bethesda Arcade"></div><p class="loc-name">Bethesda Arcade</p><p class="loc-sub">Central Park · Arched Corridors</p></div>
+      <div class="loc-card"><div class="loc-img"><img src="Hudson_Yards_Christmas.jpg" alt="Hudson Yards"></div><p class="loc-name">Hudson Yards</p><p class="loc-sub">Holiday Magic · Winter Proposals</p></div>
 
     </div>
 
-    <!-- Scroll arrows -->
-    <button onclick="slideLeft()" aria-label="Previous" style="position:absolute;left:20px;top:50%;transform:translateY(-60%);width:48px;height:48px;border-radius:50%;background:var(--white);border:1px solid var(--stone);cursor:pointer;font-size:18px;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 12px rgba(0,0,0,0.1);z-index:2;">&#8592;</button>
-    <button onclick="slideRight()" aria-label="Next" style="position:absolute;right:20px;top:50%;transform:translateY(-60%);width:48px;height:48px;border-radius:50%;background:var(--white);border:1px solid var(--stone);cursor:pointer;font-size:18px;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 12px rgba(0,0,0,0.1);z-index:2;">&#8594;</button>
+    <!-- Arrows -->
+    <button onclick="locSlide(-1)" style="position:absolute;left:12px;top:210px;width:48px;height:48px;border-radius:50%;background:var(--white);border:1px solid var(--stone);cursor:pointer;font-size:18px;box-shadow:0 2px 12px rgba(0,0,0,0.1);z-index:2;">&#8592;</button>
+    <button onclick="locSlide(1)" style="position:absolute;right:12px;top:210px;width:48px;height:48px;border-radius:50%;background:var(--white);border:1px solid var(--stone);cursor:pointer;font-size:18px;box-shadow:0 2px 12px rgba(0,0,0,0.1);z-index:2;">&#8594;</button>
   </div>
 
   <!-- Dots -->
-  <div id="loc-dots" style="display:flex;justify-content:center;gap:8px;margin-top:32px;padding:0 72px;">
-    <button onclick="goToSlide(0)" class="loc-dot" style="width:8px;height:8px;border-radius:50%;background:var(--ink);border:none;cursor:pointer;padding:0;transition:all 0.2s;"></button>
-    <button onclick="goToSlide(1)" class="loc-dot" style="width:8px;height:8px;border-radius:50%;background:var(--mist);border:none;cursor:pointer;padding:0;transition:all 0.2s;"></button>
-    <button onclick="goToSlide(2)" class="loc-dot" style="width:8px;height:8px;border-radius:50%;background:var(--mist);border:none;cursor:pointer;padding:0;transition:all 0.2s;"></button>
-    <button onclick="goToSlide(3)" class="loc-dot" style="width:8px;height:8px;border-radius:50%;background:var(--mist);border:none;cursor:pointer;padding:0;transition:all 0.2s;"></button>
-    <button onclick="goToSlide(4)" class="loc-dot" style="width:8px;height:8px;border-radius:50%;background:var(--mist);border:none;cursor:pointer;padding:0;transition:all 0.2s;"></button>
-    <button onclick="goToSlide(5)" class="loc-dot" style="width:8px;height:8px;border-radius:50%;background:var(--mist);border:none;cursor:pointer;padding:0;transition:all 0.2s;"></button>
-    <button onclick="goToSlide(6)" class="loc-dot" style="width:8px;height:8px;border-radius:50%;background:var(--mist);border:none;cursor:pointer;padding:0;transition:all 0.2s;"></button>
-    <button onclick="goToSlide(7)" class="loc-dot" style="width:8px;height:8px;border-radius:50%;background:var(--mist);border:none;cursor:pointer;padding:0;transition:all 0.2s;"></button>
-    <button onclick="goToSlide(8)" class="loc-dot" style="width:8px;height:8px;border-radius:50%;background:var(--mist);border:none;cursor:pointer;padding:0;transition:all 0.2s;"></button>
-    <button onclick="goToSlide(9)" class="loc-dot" style="width:8px;height:8px;border-radius:50%;background:var(--mist);border:none;cursor:pointer;padding:0;transition:all 0.2s;"></button>
-  </div>
+  <div id="loc-dots" style="display:flex;justify-content:center;gap:8px;margin-top:28px;flex-wrap:wrap;padding:0 72px;"></div>
 </section>
 
 <style>
-#loc-track::-webkit-scrollbar { display:none; }
-#loc-track { user-select:none; }
+.loc-card { flex:0 0 340px; }
+.loc-img { height:420px;overflow:hidden;margin-bottom:16px; }
+.loc-img img { width:100%;height:100%;object-fit:cover;object-position:center;transition:transform 0.4s; }
+.loc-img img:hover { transform:scale(1.04); }
+.loc-name { font-family:var(--serif);font-size:18px;font-weight:400;color:var(--ink);margin:0 0 4px; }
+.loc-sub { font-size:12px;color:var(--mist);margin:0;letter-spacing:0.06em;text-transform:uppercase; }
 </style>
 
 <script>
-var locTrack = document.getElementById('loc-track');
-var locDots = document.querySelectorAll('.loc-dot');
-var cardW = 360; // card width + gap
-var locCurrent = 0;
-var locTotal = 10;
-var locAuto;
+(function(){
+  var track = document.getElementById('loc-track');
+  var dotsContainer = document.getElementById('loc-dots');
+  var cards = track.querySelectorAll('.loc-card');
+  var total = cards.length; // auto = 16
+  var current = 0;
+  var cardW = 360; // 340px + 20px gap
+  var autoTimer;
 
-function updateDots(idx){
-  locDots.forEach(function(d,i){
-    d.style.background = i===idx ? 'var(--ink)' : 'var(--mist)';
-    d.style.width = i===idx ? '20px' : '8px';
-    d.style.borderRadius = i===idx ? '4px' : '50%';
-  });
-}
+  // Build dots
+  for(var i=0;i<total;i++){
+    (function(idx){
+      var d = document.createElement('button');
+      d.style.cssText = 'width:8px;height:8px;border-radius:50%;background:var(--mist);border:none;cursor:pointer;padding:0;transition:all 0.25s;';
+      d.onclick = function(){ goTo(idx); };
+      dotsContainer.appendChild(d);
+    })(i);
+  }
 
-function goToSlide(idx){
-  locCurrent = idx;
-  locTrack.scrollTo({left: idx * cardW, behavior:'smooth'});
-  updateDots(idx);
-}
+  function getDots(){ return dotsContainer.querySelectorAll('button'); }
 
-function slideRight(){
-  locCurrent = (locCurrent + 1) % locTotal;
-  goToSlide(locCurrent);
-}
+  function updateDots(){
+    getDots().forEach(function(d,i){
+      d.style.background = i===current ? 'var(--ink)' : 'var(--mist)';
+      d.style.width = i===current ? '20px' : '8px';
+      d.style.borderRadius = i===current ? '4px' : '50%';
+    });
+  }
 
-function slideLeft(){
-  locCurrent = (locCurrent - 1 + locTotal) % locTotal;
-  goToSlide(locCurrent);
-}
+  function goTo(idx){
+    current = (idx + total) % total;
+    track.style.transform = 'translateX(-' + (current * cardW) + 'px)';
+    updateDots();
+  }
 
-// Auto advance every 4 seconds
-locAuto = setInterval(slideRight, 4000);
-locTrack.addEventListener('mouseenter', function(){ clearInterval(locAuto); });
-locTrack.addEventListener('mouseleave', function(){ locAuto = setInterval(slideRight, 4000); });
+  window.locSlide = function(dir){ goTo(current + dir); };
 
-// Sync dots on manual scroll
-locTrack.addEventListener('scroll', function(){
-  var idx = Math.round(locTrack.scrollLeft / cardW);
-  if(idx !== locCurrent){ locCurrent = idx; updateDots(idx); }
-});
+  // Auto
+  function startAuto(){ autoTimer = setInterval(function(){ goTo(current+1); }, 4000); }
+  function stopAuto(){ clearInterval(autoTimer); }
+  track.parentElement.addEventListener('mouseenter', stopAuto);
+  track.parentElement.addEventListener('mouseleave', startAuto);
+  startAuto();
+  updateDots();
+})();
 </script>
 
+<style>
+::-webkit-scrollbar { display:none; }
+#loc-track { user-select:none; }
+</style>
 
 <!-- PROCESS -->
 <section class="process-section">
@@ -839,12 +760,12 @@ locTrack.addEventListener('scroll', function(){
     <div class="process-step reveal">
       <div class="step-num">02</div>
       <div class="step-title">We plan together</div>
-      <div class="step-body">I scout your location, advise on timing and light, and help you build a cover story that feels natural. All via WhatsApp.</div>
+      <div class="step-body">I scout your location, advise on timing and light, and help you build a cover story that feels natural. All via text.</div>
     </div>
     <div class="process-step reveal">
       <div class="step-num">03</div>
-      <div class="step-title">The moment arrives</div>
-      <div class="step-body">I'm already in position when you arrive. Invisible, ready. You focus entirely on her. I capture everything — including the tears.</div>
+      <div class="step-title">The session begins</div>
+      <div class="step-body">I'm already there when you arrive. Whether it's a surprise proposal or an engagement shoot — I read the moment and capture everything. Including the tears.</div>
     </div>
     <div class="process-step reveal">
       <div class="step-num">04</div>
@@ -858,16 +779,18 @@ locTrack.addEventListener('scroll', function(){
 <section class="about-section">
   <div class="about-grid">
     <div class="about-photo reveal">
-      <img src="agata-photo.jpg" alt="Agata — NYC Proposal Photographer" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;">
+      <img src="agata-photo.jpg" alt="Agata — NYC Proposal & Engagement Photographer" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;">
     </div>
     <div class="about-text reveal">
       <p class="section-label">Your photographer</p>
       <h2 class="section-headline">Hi, I'm <em>Agata.</em></h2>
       <p class="section-body">
-        I've photographed 100+ surprise proposals across New York City — from Bow Bridge at sunrise to Brooklyn Bridge at sunset. I know exactly where to position myself, when to arrive, and how to stay invisible until the ring comes out.<br><br>
-        I don't just show up with a camera. I help you plan every detail — the spot, the timing, the cover story — so when you get down on one knee, the only thing on your mind is her.
+        I've been photographing proposals and engagements in New York for years — and I still get butterflies every single time he gets down on one knee.<br><br>
+        150+ couples trusted me with their most important moment. Some knew I was coming. Some had no idea. Either way, my job is the same: disappear into the background, read the moment before it happens, and click at exactly the right second.<br><br>
+        I don't coordinate shoots. I coordinate memories. The spot, the light, the cover story, the timing — I handle all of it. So when the moment arrives, you're not thinking about logistics. You're just there, fully present, with the person you love.<br><br>
+        That's the only thing that matters.
       </p>
-      <p class="about-name">Agataprincely · NYC Proposal Photographer</p>
+      <p class="about-name">Agataprincely · NYC Proposal & Engagement Photographer</p>
     </div>
   </div>
 </section>
@@ -878,18 +801,33 @@ locTrack.addEventListener('scroll', function(){
   <h2 class="section-headline">Real proposals. Real <em>reactions.</em></h2>
   <div class="testi-grid">
     <div class="testi-card reveal">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;">
+        <div style="font-size:13px;font-weight:600;color:var(--ink);">Ross F.</div>
+        <div style="font-size:11px;color:var(--mist);">Jan 27, 2025</div>
+        <div style="font-size:11px;font-weight:500;color:#00a650;letter-spacing:0.04em;">✓ Verified</div>
+      </div>
       <div class="testi-stars">★★★★★</div>
-      <div class="testi-quote">"She made my most important decision feel easy to navigate. Her recommendations erased every fear I had about the logistics. The photos made my fiancée cry — in the best way."</div>
-      <div class="testi-author">— Michael R., Bow Bridge</div>
+      <div class="testi-quote">"Agata was absolutely incredible! From our first communication to the day of the shoot, she was kind, professional, and incredibly thoughtful. It felt like spending time with a friend who just happens to be an amazing photographer. The final photos exceeded all our expectations — stunning and captured the moment perfectly. 12/10 experience!"</div>
+      <div class="testi-author">— Ross F., Verified Client</div>
     </div>
     <div class="testi-card reveal">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;">
+        <div style="font-size:13px;font-weight:600;color:var(--ink);">David K.</div>
+        <div style="font-size:11px;color:var(--mist);">The Mall, Central Park</div>
+        <div style="font-size:11px;font-weight:500;color:#00a650;letter-spacing:0.04em;">✓ Verified</div>
+      </div>
       <div class="testi-stars">★★★★★</div>
-      <div class="testi-quote">"I had no idea where to even start. She helped me choose the spot, the time, even what to say to get my girlfriend there. The whole thing was flawless. Not a single tourist in frame."</div>
+      <div class="testi-quote">"I had no idea where to even start. Agata helped me choose the spot, the time, even what to say to get my girlfriend there. The whole thing was flawless. Not a single tourist in frame."</div>
       <div class="testi-author">— David K., The Mall in Central Park</div>
     </div>
     <div class="testi-card reveal">
+      <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;">
+        <div style="font-size:13px;font-weight:600;color:var(--ink);">James T.</div>
+        <div style="font-size:11px;color:var(--mist);">Conservatory Garden</div>
+        <div style="font-size:11px;font-weight:500;color:#00a650;letter-spacing:0.04em;">✓ Verified</div>
+      </div>
       <div class="testi-stars">★★★★★</div>
-      <div class="testi-quote">"The photos arrived the next morning. I was shaking looking at them. She captured the exact second my now-fiancée understood what was going on."</div>
+      <div class="testi-quote">"The photos arrived and I couldn't stop shaking. Agata has a gift for capturing emotion — the real, unscripted kind. Every photo felt like a memory, not a photoshoot."</div>
       <div class="testi-author">— James T., Conservatory Garden</div>
     </div>
   </div>
@@ -899,48 +837,56 @@ locTrack.addEventListener('scroll', function(){
 <section class="offer-section" id="packages">
   <p class="section-label">Packages</p>
   <h2 class="section-headline">Choose your <em>experience</em></h2>
+
+
+
   <div class="offer-cards">
-    <div class="offer-card reveal">
-      <div class="offer-tag">Essential</div>
+
+    <!-- The Moment -->
+    <div class="offer-card featured reveal">
+      <div class="offer-tag">⭐ Most Popular</div>
       <div class="offer-name">The Moment</div>
+      <div style="font-size:13px;color:rgba(255,255,255,0.55);margin-bottom:20px;font-style:italic;">Surprise Proposal or Engagement Session · 1 hour</div>
       <div class="offer-price"><sup>$</sup>450</div>
       <ul class="offer-features">
-        <li>1 hour in Central Park</li>
-        <li>Hidden candid coverage</li>
-        <li>30+ edited photos</li>
-        <li>Online gallery (2 weeks)</li>
-        <li>Location consultation</li>
+        <li>150+ color-corrected high-resolution photos</li>
+        <li>10 professionally retouched photos</li>
+        <li>Delivered within 2 weeks</li>
       </ul>
-      <a href="#book" class="offer-btn">Book — Check Availability</a>
+      <a href="#book" class="offer-btn">Book This Package</a>
     </div>
-    <div class="offer-card featured reveal">
-      <div class="offer-tag">Most Popular</div>
-      <div class="offer-name">The Full Story</div>
-      <div class="offer-price"><sup>$</sup>750</div>
+
+    <!-- The Story -->
+    <div class="offer-card reveal">
+      <div class="offer-tag">Popular</div>
+      <div class="offer-name">The Story</div>
+      <div style="font-size:13px;color:var(--mist);margin-bottom:20px;font-style:italic;">Proposal + Portraits or Full Engagement Session · 1.5 hours</div>
+      <div class="offer-price"><sup>$</sup>600</div>
       <ul class="offer-features">
-        <li>2 hours of coverage</li>
-        <li>Proposal + couple session after</li>
-        <li>60+ edited photos</li>
-        <li>Location scouting visit</li>
-        <li>Full logistics planning (WhatsApp)</li>
-        <li>Online gallery (2 weeks)</li>
+        <li>200+ color-corrected high-resolution photos</li>
+        <li>15 professionally retouched photos</li>
+        <li>Short portrait session after the proposal</li>
+        <li>Delivered within 2 weeks</li>
       </ul>
-      <a href="#book" class="offer-btn">Book — Check Availability</a>
+      <a href="#book" class="offer-btn">Book This Package</a>
     </div>
+
+    <!-- The Full Experience -->
     <div class="offer-card reveal">
       <div class="offer-tag">Premium</div>
-      <div class="offer-name">The Memory</div>
-      <div class="offer-price"><sup>$</sup>1,200</div>
+      <div class="offer-name">The Full Experience</div>
+      <div style="font-size:13px;color:var(--mist);margin-bottom:20px;font-style:italic;">Extended Proposal or Engagement Experience · 2 hours</div>
+      <div class="offer-price"><sup>$</sup>750</div>
       <ul class="offer-features">
-        <li>3 hours of coverage</li>
-        <li>Proposal + full engagement session</li>
-        <li>100+ edited photos</li>
-        <li>Short cinematic video highlight</li>
-        <li>Priority booking + same-day preview</li>
-        <li>Online gallery + USB delivery</li>
+        <li>300+ color-corrected high-resolution photos</li>
+        <li>25 professionally retouched photos</li>
+        <li>Extended portrait session after the proposal</li>
+        <li>Multiple locations if desired</li>
+        <li>Delivered within 2 weeks</li>
       </ul>
-      <a href="#book" class="offer-btn">Book — Check Availability</a>
+      <a href="#book" class="offer-btn">Book This Package</a>
     </div>
+
   </div>
 </section>
 
@@ -948,8 +894,8 @@ locTrack.addEventListener('scroll', function(){
 <section class="urgency-section">
   <div class="reveal">
     <div class="urgency-eyebrow">⚠ August 2025 — Spots Going Fast</div>
-    <h2 class="urgency-headline">Fall proposal dates are booking now</h2>
-    <p class="urgency-sub">September and October weekends in Central Park fill up weeks in advance. Right now — the last week of July — people are booking their fall proposals. Every year, the couples who wait until August find their date is gone. Check yours before someone else takes it.</p>
+    <h2 class="urgency-headline">Fall proposal and engagement dates are booking now</h2>
+    <p class="urgency-sub">September and October weekends in Central Park fill up weeks in advance. Right now — the last week of July — people are booking their fall proposals and engagement sessions. Every year, the couples who wait find their date is gone. Check yours before someone else takes it.</p>
   </div>
   <a href="#book" class="urgency-cta">Check If My Date Is Open →</a>
 </section>
@@ -961,7 +907,7 @@ locTrack.addEventListener('scroll', function(){
     <h2 class="section-headline">Is your date still available?</h2>
     <p class="form-intro">Fill in your date below — I'll tell you if it's still open and what we can do together. No commitment. No sales pitch. Just a quick answer.</p>
 
-    <form id="leadForm" name="proposals" netlify netlify-honeypot="bot-field">
+    <form id="leadForm" name="proposals" netlify data-netlify="true" netlify-honeypot="bot-field">
       <input type="hidden" name="form-name" value="proposals"/>
       <p style="display:none"><input name="bot-field"/></p>
       <div class="form-grid">
@@ -970,7 +916,7 @@ locTrack.addEventListener('scroll', function(){
           <input type="text" id="name" name="name" placeholder="First name" required/>
         </div>
         <div class="form-group">
-          <label for="phone">Phone / WhatsApp</label>
+          <label for="phone">Phone (for texting)</label>
           <input type="tel" id="phone" name="phone" placeholder="+1 (858) 353-6287" required/>
         </div>
         <div class="form-group">
@@ -982,12 +928,22 @@ locTrack.addEventListener('scroll', function(){
           <input type="date" id="date" name="date" required/>
         </div>
         <div class="form-group">
+          <label for="session">Session Type</label>
+          <select id="session" name="session">
+            <option value="">Select type</option>
+            <option value="proposal">Surprise Proposal</option>
+            <option value="engagement">Engagement Session</option>
+            <option value="both">Proposal + Engagement</option>
+            <option value="unsure">Not sure yet</option>
+          </select>
+        </div>
+        <div class="form-group">
           <label for="package">Package Interest</label>
           <select id="package" name="package">
             <option value="">Select a package</option>
-            <option value="essential">The Moment — $450</option>
-            <option value="popular">The Full Story — $750 ★</option>
-            <option value="premium">The Memory — $1,200</option>
+            <option value="the-moment">The Moment — $450</option>
+            <option value="the-story">The Story — $600</option>
+            <option value="full-experience">The Full Experience — $750 ★</option>
             <option value="unsure">Not sure yet</option>
           </select>
         </div>
@@ -1012,12 +968,12 @@ locTrack.addEventListener('scroll', function(){
     </form>
 
     <div class="form-wa">
-      Or message me directly on WhatsApp: <a href="https://wa.me/18583536287" target="_blank">+1 (858) 353-6287</a>
+      Or text me directly: <a href="sms:+18583536287">+1 (858) 353-6287</a>
     </div>
 
     <div class="form-success" id="formSuccess">
       <h3>Message received ✦</h3>
-      <p>I'll be in touch within a few hours to start planning your perfect moment. Check your email — and WhatsApp if you left your number.</p>
+      <p>I'll be in touch within a few hours to start planning your perfect moment. Check your email — or expect a text from me soon.</p>
     </div>
   </div>
 </section>
@@ -1033,7 +989,7 @@ locTrack.addEventListener('scroll', function(){
     </div>
     <div class="faq-item">
       <button class="faq-q">Will she notice you? <span class="faq-icon">+</span></button>
-      <div class="faq-a">No. I blend in naturally — just another person nearby. I know exactly how to position myself to stay completely invisible while capturing every detail. I've done this 100+ times — your partner will have no idea I'm there until she sees the photos.</div>
+      <div class="faq-a">No. I blend in naturally — just another person nearby. I know exactly how to position myself to stay completely invisible while capturing every detail. I've done this 150+ times — your partner will have no idea I'm there until she sees the photos.</div>
     </div>
     <div class="faq-item">
       <button class="faq-q">Can you help me choose the location? <span class="faq-icon">+</span></button>
@@ -1041,7 +997,7 @@ locTrack.addEventListener('scroll', function(){
     </div>
     <div class="faq-item">
       <button class="faq-q">How do I get her to the spot without spoiling it? <span class="faq-icon">+</span></button>
-      <div class="faq-a">We'll craft a believable cover story together over WhatsApp before the day. I've helped hundreds of partners navigate this exact challenge — none of them have been found out.</div>
+      <div class="faq-a">We'll craft a believable cover story together over text before the day. I've helped hundreds of partners navigate this exact challenge — none of them have been found out.</div>
     </div>
     <div class="faq-item">
       <button class="faq-q">When will I receive the photos? <span class="faq-icon">+</span></button>
