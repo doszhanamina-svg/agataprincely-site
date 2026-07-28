@@ -1078,6 +1078,7 @@ if (form) {
     })
     .then(function(res) {
       if (!res.ok) throw new Error('Bad response: ' + res.status);
+      if (typeof fbq === 'function') { fbq('track', 'Lead'); }
       form.style.display = 'none';
       document.getElementById('formSuccess').style.display = 'block';
     })
