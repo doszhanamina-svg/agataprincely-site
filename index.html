@@ -592,7 +592,7 @@ footer {
     <!-- VSL: photo + play button -->
     <div id="hvsl" style="position:absolute;inset:0;z-index:2;">
       <!-- photo -->
-      <img src="hero-photo.jpg" alt="Couple embracing during a surprise proposal in Central Park, NYC" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;">
+      <img src="hero-photo-optimized.jpg" alt="Couple embracing during a surprise proposal in Central Park, NYC" fetchpriority="high" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;">
       <!-- dark overlay -->
       <div style="position:absolute;inset:0;background:rgba(0,0,0,0.32);"></div>
       <!-- play button -->
@@ -675,22 +675,22 @@ function playHeroVSL(){
     <!-- Track -->
     <div id="loc-track" style="display:flex;transition:transform 0.4s ease;will-change:transform;padding:0 72px;gap:20px;">
 
-      <div class="loc-card"><div class="loc-img"><img src="Central Park Lake.jpg" alt="Bow Bridge"></div><p class="loc-name">Bow Bridge</p><p class="loc-sub">Central Park · Most Romantic</p></div>
-      <div class="loc-card"><div class="loc-img"><img src="Central Park San Remo Buildings.jpg" alt="San Remo View"></div><p class="loc-name">San Remo View</p><p class="loc-sub">Central Park · Iconic Skyline</p></div>
-      <div class="loc-card"><div class="loc-img"><img src="Central Park Bethesda Terrace.jpg" alt="Bethesda Terrace"></div><p class="loc-name">Bethesda Terrace</p><p class="loc-sub">Central Park · Golden Architecture</p></div>
-      <div class="loc-card"><div class="loc-img"><img src="Central Park Cat Rock.jpg" alt="Cat Rock"></div><p class="loc-name">Cat Rock</p><p class="loc-sub">Central Park · Hidden & Intimate</p></div>
-      <div class="loc-card"><div class="loc-img"><img src="Central Park Bow Bridge.jpg" alt="Bow Bridge 2"></div><p class="loc-name">Bow Bridge</p><p class="loc-sub">Central Park · Sunrise Light</p></div>
-      <div class="loc-card"><div class="loc-img"><img src="Brooklyn Bridge View.jpg" alt="Brooklyn Bridge"></div><p class="loc-name">Brooklyn Bridge View</p><p class="loc-sub">Brooklyn · Classic NYC</p></div>
-      <div class="loc-card"><div class="loc-img"><img src="Pier 17.jpg" alt="Pier 17"></div><p class="loc-name">Pier 17</p><p class="loc-sub">Lower Manhattan · Waterfront</p></div>
-      <div class="loc-card"><div class="loc-img"><img src="Jersey City.jpg" alt="Jersey City"></div><p class="loc-name">Jersey City</p><p class="loc-sub">Manhattan Skyline Backdrop</p></div>
-      <div class="loc-card"><div class="loc-img"><img src="Robert Wagner Park.jpg" alt="Robert Wagner Park"></div><p class="loc-name">Robert Wagner Park</p><p class="loc-sub">Battery Park · Statue of Liberty View</p></div>
-      <div class="loc-card"><div class="loc-img"><img src="Pier 57.jpg" alt="Pier 57"></div><p class="loc-name">Pier 57</p><p class="loc-sub">Hudson River · Sunset Magic</p></div>
-      <div class="loc-card"><div class="loc-img"><img src="Dumbo.jpg" alt="DUMBO"></div><p class="loc-name">DUMBO</p><p class="loc-sub">Brooklyn · Bridge + Skyline</p></div>
-      <div class="loc-card"><div class="loc-img"><img src="NYC_Subway_Fulton.jpg" alt="NYC Subway"></div><p class="loc-name">NYC Subway</p><p class="loc-sub">Fulton St · Urban & Editorial</p></div>
-      <div class="loc-card"><div class="loc-img"><img src="Brooklyn_Streets.jpg" alt="Brooklyn Streets"></div><p class="loc-name">Brooklyn Streets</p><p class="loc-sub">Brownstone NYC · Candid & Real</p></div>
-      <div class="loc-card"><div class="loc-img"><img src="Central_Park_Lake_2.jpg" alt="Central Park Lake"></div><p class="loc-name">Central Park Lake</p><p class="loc-sub">Central Park · Hidden Waterside</p></div>
-      <div class="loc-card"><div class="loc-img"><img src="Central_Park_Bethesda_2.jpg" alt="Bethesda Arcade"></div><p class="loc-name">Bethesda Arcade</p><p class="loc-sub">Central Park · Arched Corridors</p></div>
-      <div class="loc-card"><div class="loc-img"><img src="Hudson_Yards_Christmas.jpg" alt="Hudson Yards"></div><p class="loc-name">Hudson Yards</p><p class="loc-sub">Holiday Magic · Winter Proposals</p></div>
+      <div class="loc-card"><div class="loc-img"><img src="Central Park Lake.jpg" alt="Bow Bridge" loading="lazy"></div><p class="loc-name">Bow Bridge</p><p class="loc-sub">Central Park · Most Romantic</p></div>
+      <div class="loc-card"><div class="loc-img"><img src="Central Park San Remo Buildings.jpg" alt="San Remo View" loading="lazy"></div><p class="loc-name">San Remo View</p><p class="loc-sub">Central Park · Iconic Skyline</p></div>
+      <div class="loc-card"><div class="loc-img"><img src="Central Park Bethesda Terrace.jpg" alt="Bethesda Terrace" loading="lazy"></div><p class="loc-name">Bethesda Terrace</p><p class="loc-sub">Central Park · Golden Architecture</p></div>
+      <div class="loc-card"><div class="loc-img"><img src="Central Park Cat Rock.jpg" alt="Cat Rock" loading="lazy"></div><p class="loc-name">Cat Rock</p><p class="loc-sub">Central Park · Hidden & Intimate</p></div>
+      <div class="loc-card"><div class="loc-img"><img src="Central Park Bow Bridge.jpg" alt="Bow Bridge 2" loading="lazy"></div><p class="loc-name">Bow Bridge</p><p class="loc-sub">Central Park · Sunrise Light</p></div>
+      <div class="loc-card"><div class="loc-img"><img src="Brooklyn Bridge View.jpg" alt="Brooklyn Bridge" loading="lazy"></div><p class="loc-name">Brooklyn Bridge View</p><p class="loc-sub">Brooklyn · Classic NYC</p></div>
+      <div class="loc-card"><div class="loc-img"><img src="Pier 17.jpg" alt="Pier 17" loading="lazy"></div><p class="loc-name">Pier 17</p><p class="loc-sub">Lower Manhattan · Waterfront</p></div>
+      <div class="loc-card"><div class="loc-img"><img src="Jersey City.jpg" alt="Jersey City" loading="lazy"></div><p class="loc-name">Jersey City</p><p class="loc-sub">Manhattan Skyline Backdrop</p></div>
+      <div class="loc-card"><div class="loc-img"><img src="Robert Wagner Park.jpg" alt="Robert Wagner Park" loading="lazy"></div><p class="loc-name">Robert Wagner Park</p><p class="loc-sub">Battery Park · Statue of Liberty View</p></div>
+      <div class="loc-card"><div class="loc-img"><img src="Pier 57.jpg" alt="Pier 57" loading="lazy"></div><p class="loc-name">Pier 57</p><p class="loc-sub">Hudson River · Sunset Magic</p></div>
+      <div class="loc-card"><div class="loc-img"><img src="Dumbo.jpg" alt="DUMBO" loading="lazy"></div><p class="loc-name">DUMBO</p><p class="loc-sub">Brooklyn · Bridge + Skyline</p></div>
+      <div class="loc-card"><div class="loc-img"><img src="NYC_Subway_Fulton.jpg" alt="NYC Subway" loading="lazy"></div><p class="loc-name">NYC Subway</p><p class="loc-sub">Fulton St · Urban & Editorial</p></div>
+      <div class="loc-card"><div class="loc-img"><img src="Brooklyn_Streets.jpg" alt="Brooklyn Streets" loading="lazy"></div><p class="loc-name">Brooklyn Streets</p><p class="loc-sub">Brownstone NYC · Candid & Real</p></div>
+      <div class="loc-card"><div class="loc-img"><img src="Central_Park_Lake_2.jpg" alt="Central Park Lake" loading="lazy"></div><p class="loc-name">Central Park Lake</p><p class="loc-sub">Central Park · Hidden Waterside</p></div>
+      <div class="loc-card"><div class="loc-img"><img src="Central_Park_Bethesda_2.jpg" alt="Bethesda Arcade" loading="lazy"></div><p class="loc-name">Bethesda Arcade</p><p class="loc-sub">Central Park · Arched Corridors</p></div>
+      <div class="loc-card"><div class="loc-img"><img src="Hudson_Yards_Christmas.jpg" alt="Hudson Yards" loading="lazy"></div><p class="loc-name">Hudson Yards</p><p class="loc-sub">Holiday Magic · Winter Proposals</p></div>
 
     </div>
 
@@ -797,7 +797,7 @@ function playHeroVSL(){
 <section class="about-section">
   <div class="about-grid">
     <div class="about-photo reveal">
-      <img src="agata-photo.jpg" alt="Agata — NYC Proposal & Engagement Photographer" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;">
+      <img src="agata-photo-optimized.jpg" alt="Agata — NYC Proposal & Engagement Photographer" loading="lazy" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;">
     </div>
     <div class="about-text reveal">
       <p class="section-label">Your photographer</p>
@@ -914,7 +914,7 @@ function playHeroVSL(){
 <!-- URGENCY -->
 <section class="urgency-section">
   <div class="reveal">
-    <div class="urgency-eyebrow">⚠ August 2025 — Spots Going Fast</div>
+    <div class="urgency-eyebrow">⚠ Fall 2026 — Spots Going Fast</div>
     <h2 class="urgency-headline">Fall proposal and engagement dates are booking now</h2>
     <p class="urgency-sub">September and October weekends in Central Park fill up weeks in advance. Right now — the last week of July — people are booking their fall proposals and engagement sessions. Every year, the couples who wait find their date is gone. Check yours before someone else takes it.</p>
   </div>
@@ -1048,7 +1048,7 @@ function playHeroVSL(){
     <a href="#packages">Packages</a>
     <a href="#book">Contact</a>
   </div>
-  <div class="footer-copy">© 2025 Agataprincely · New York City</div>
+  <div class="footer-copy">© 2026 Agataprincely · New York City</div>
 </footer>
 
 <script>
@@ -1073,6 +1073,7 @@ const form = document.getElementById('leadForm');
 if (form) {
   form.addEventListener('submit', function(e) {
     e.preventDefault();
+    if (typeof fbq === 'function') { fbq('trackCustom', 'FormSubmitAttempted'); }
     const data = new FormData(form);
     fetch('/', {
       method: 'POST',
@@ -1086,10 +1087,53 @@ if (form) {
       document.getElementById('formSuccess').style.display = 'block';
     })
     .catch(function() {
+      if (typeof fbq === 'function') { fbq('trackCustom', 'FormSubmitError'); }
       alert('Something went wrong sending your request. Please text me directly at +1 (858) 353-6287.');
     });
   });
+
+  // Form Started — fires once, on first interaction with the first field
+  var nameField = document.getElementById('name');
+  if (nameField) {
+    nameField.addEventListener('focus', function() {
+      if (typeof fbq === 'function') { fbq('trackCustom', 'FormStarted'); }
+    }, { once: true });
+  }
 }
+
+// Form Viewed — fires once, when the #book section enters the viewport
+var bookSection = document.getElementById('book');
+if (bookSection) {
+  var formViewObserver = new IntersectionObserver(function(entries) {
+    entries.forEach(function(entry) {
+      if (entry.isIntersecting) {
+        if (typeof fbq === 'function') { fbq('trackCustom', 'FormViewed'); }
+        formViewObserver.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.3 });
+  formViewObserver.observe(bookSection);
+}
+
+// CTA Clicks — tracks intent signals across the page, before the form
+function trackCTA(label) {
+  return function() {
+    if (typeof fbq === 'function') { fbq('trackCustom', 'CTAClick', { button: label }); }
+  };
+}
+document.querySelectorAll('.nav-cta').forEach(function(el) {
+  el.addEventListener('click', trackCTA('check_availability_nav'));
+});
+document.querySelectorAll('.hero-cta-group .btn-primary').forEach(function(el) {
+  el.addEventListener('click', trackCTA('plan_my_proposal_hero'));
+});
+document.querySelectorAll('.offer-btn').forEach(function(el, i) {
+  var names = ['book_the_moment', 'book_the_story', 'book_full_experience'];
+  el.addEventListener('click', trackCTA(names[i] || 'book_package'));
+});
+document.querySelectorAll('.urgency-cta').forEach(function(el) {
+  el.addEventListener('click', trackCTA('check_date_urgency'));
+});
 </script>
 
 <!-- 100% privacy-first analytics (Simple Analytics) -->
