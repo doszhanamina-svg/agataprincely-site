@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8"/>
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>NYC Proposal & Engagement Photographer — Agataprincely</title>
+<title>NYC Proposal & Engagement Photographer — Agataphotography</title>
 <meta name="description" content="Secret proposal photographer in NYC. I scout the spot, stay hidden, and capture the exact moment she says yes. Packages from $450."/>
 <meta name="facebook-domain-verification" content="pmolrj9outdw5ct8ny1cqcuqai98jn" />
 <!-- Meta Pixel Code -->
@@ -504,16 +504,16 @@ footer {
 
 /* ── MOBILE ── */
 @media (max-width: 768px) {
-  nav { padding: 14px 20px; }
+  nav { padding: 12px 16px; }
   .nav-phone { display: none; }
-  .nav-logo { font-size: 15px; }
-  .nav-cta { padding: 10px 16px; font-size: 12px; }
+  .nav-logo { font-size: 12px; letter-spacing: 0.05em; white-space: nowrap; }
+  .nav-cta { padding: 8px 12px; font-size: 10.5px; white-space: nowrap; letter-spacing: 0.03em; }
 
   .hero { grid-template-columns: 1fr; min-height: auto; }
   .hero-left { padding: 40px 24px 48px; }
   .hero-headline { font-size: clamp(34px, 9vw, 48px); }
   .hero-headline-accent { font-size: clamp(32px, 8vw, 44px); }
-  .hero-right { height: auto; aspect-ratio: 4/5; }
+  .hero-right { height: auto; overflow: visible; padding: 40px 24px !important; }
   .hero-trust { gap: 20px; }
 
   .stress-strip { padding: 18px 24px; flex-direction: column; align-items: flex-start; gap: 8px; }
@@ -550,7 +550,7 @@ footer {
 
 <!-- NAV -->
 <nav>
-  <a href="#" class="nav-logo">Agataprincely</a>
+  <a href="#" class="nav-logo">Agataphotography</a>
   <div class="nav-right">
     <a href="sms:+18583536287" class="nav-phone">
       +1 (858) 353-6287
@@ -570,97 +570,69 @@ footer {
       Whether it's a surprise proposal or an engagement session — I scout the spot, find the light, and capture the moment exactly as it happens. Real. Unscripted. Yours.
     </p>
     <div class="hero-cta-group">
-      <a href="#book" class="btn-primary">Plan My Proposal</a>
-      <a href="#how" class="btn-ghost">See how it works</a>
-    </div>
-    <div class="hero-trust">
-      <div class="trust-item">
-        <div class="trust-number">150+</div>
-        <div class="trust-label">Proposals captured</div>
-      </div>
-      <div class="trust-item">
-        <div class="trust-number">5 ★</div>
-        <div class="trust-label">Average rating</div>
-      </div>
-      <div class="trust-item">
-        <div class="trust-number">2-3 days</div>
-        <div class="trust-label">Full gallery delivery</div>
-      </div>
+      <a href="#packages" class="btn-primary">See Packages & Pricing</a>
     </div>
   </div>
-  <div class="hero-right" style="position:relative;overflow:hidden;background:#000;">
-    <!-- VSL: photo + play button -->
-    <div id="hvsl" style="position:absolute;inset:0;z-index:2;">
-      <!-- photo -->
-      <img src="hero-photo-optimized.jpg" alt="Couple embracing during a surprise proposal in Central Park, NYC" fetchpriority="high" style="width:100%;height:100%;object-fit:cover;object-position:center top;display:block;">
-      <!-- dark overlay -->
-      <div style="position:absolute;inset:0;background:rgba(0,0,0,0.32);"></div>
-      <!-- play button -->
-      <button onclick="playHeroVSL()" style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);background:none;border:none;cursor:pointer;text-align:center;padding:0;">
-        <div style="width:90px;height:90px;border-radius:50%;background:rgba(255,255,255,0.95);display:flex;align-items:center;justify-content:center;margin:0 auto 12px;box-shadow:0 4px 32px rgba(0,0,0,0.4);">
-          <svg width="32" height="32" viewBox="0 0 24 24" fill="#1C1A18" style="margin-left:5px"><polygon points="5,3 19,12 5,21"/></svg>
+  <div class="hero-right" id="book" style="background:var(--white);display:flex;align-items:center;justify-content:center;padding:56px 44px;">
+    <div style="width:100%;max-width:420px;">
+      <p class="section-label">Check availability</p>
+      <h2 style="font-family:var(--serif);font-size:clamp(24px,2.4vw,30px);font-weight:400;color:var(--ink);line-height:1.2;margin-bottom:10px;">Is your date still available?</h2>
+      <p style="font-size:14px;font-weight:400;line-height:1.65;color:var(--body-color);margin-bottom:26px;">Send your name, number, and date — I'll text you back within a few hours. No commitment, no sales pitch.</p>
+
+      <form id="leadForm" class="leadForm" name="proposals" method="POST" data-netlify="true" netlify netlify-honeypot="bot-field">
+        <input type="hidden" name="form-name" value="proposals"/>
+        <p style="display:none"><input name="bot-field"/></p>
+        <div style="display:flex;flex-direction:column;gap:14px;margin-bottom:14px;">
+          <div class="form-group">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" placeholder="First name" required/>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone (for texting)</label>
+            <input type="tel" id="phone" name="phone" placeholder="+1 (858) 353-6287" required/>
+          </div>
+          <div class="form-group">
+            <label for="date">Proposal Date</label>
+            <input type="date" id="date" name="date" required/>
+          </div>
         </div>
-        <span style="color:#fff;font-family:Georgia,serif;font-size:13px;font-style:italic;letter-spacing:0.06em;text-shadow:0 1px 6px rgba(0,0,0,0.6);">Watch how this moment was captured</span>
-      </button>
-    </div>
-    <!-- iframe appears after click -->
-    <div id="hvsl-frame" style="display:none;position:absolute;inset:0;z-index:3;overflow:hidden;background:#000;">
-      <iframe id="hvsl-iframe" src="" frameborder="0" allow="autoplay;encrypted-media;fullscreen" allowfullscreen
-        style="position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);width:177.78%;height:177.78%;min-width:100%;min-height:100%;border:0;">
-      </iframe>
+        <button type="submit" class="form-submit">Send My Request →</button>
+        <p class="form-note">I respond within a few hours. Your information is never shared.</p>
+      </form>
+
+      <div class="form-wa">
+        Or text me directly: <a href="sms:+18583536287">+1 (858) 353-6287</a>
+      </div>
+
+      <div class="form-success formSuccess" id="formSuccess">
+        <h3>Message received ✦</h3>
+        <p>I'll be in touch within a few hours to start planning your perfect moment. Check your email — or expect a text from me soon.</p>
+      </div>
     </div>
   </div>
 </section>
+
+<!-- Sticky CTA -->
+<a href="#book" id="stickyCta" onclick="if(typeof fbq==='function'){fbq('trackCustom','CTAClick',{button:'sticky_check_availability'});}" style="position:fixed;bottom:20px;left:50%;transform:translateX(-50%) translateY(120px);z-index:200;background:var(--ink);color:var(--white);font-size:13px;font-weight:600;letter-spacing:0.06em;text-transform:uppercase;padding:14px 28px;text-decoration:none;box-shadow:0 6px 24px rgba(0,0,0,0.25);transition:transform 0.3s ease, opacity 0.3s ease;opacity:0;white-space:nowrap;">Check Availability →</a>
 <script>
-function playHeroVSL(){
-  document.getElementById('hvsl').style.display='none';
-  document.getElementById('hvsl-frame').style.display='block';
-  document.getElementById('hvsl-iframe').src='https://www.youtube.com/embed/J_jUb7eeFXc?autoplay=1&rel=0&modestbranding=1&playsinline=1';
-}
+(function(){
+  var sticky = document.getElementById('stickyCta');
+  var hero = document.querySelector('.hero');
+  var footer = document.querySelector('footer');
+  if (!sticky || !hero) return;
+  function onScroll(){
+    var heroBottom = hero.getBoundingClientRect().bottom;
+    var pastHero = heroBottom < -100;
+    var overFooter = footer ? footer.getBoundingClientRect().top < window.innerHeight + 100 : false;
+    var show = pastHero && !overFooter;
+    sticky.style.opacity = show ? '1' : '0';
+    sticky.style.transform = show ? 'translateX(-50%) translateY(0)' : 'translateX(-50%) translateY(120px)';
+  }
+  window.addEventListener('scroll', onScroll, { passive: true });
+  window.addEventListener('resize', onScroll, { passive: true });
+  onScroll();
+})();
 </script>
-
-<!-- STRESS STRIP -->
-<div class="stress-strip">
-  <p>"<span>Where exactly</span> in Central Park? What time? How do I get her there without ruining the surprise?"</p>
-  <span class="stress-answer">→ I answer all of this. Before you even book.</span>
-</div>
-
-<!-- PAIN → SOLUTION -->
-<section class="pain-section" id="how">
-  <div class="section-grid">
-    <div class="reveal">
-      <p class="section-label">The real problem</p>
-      <h2 class="section-headline">
-        Planning a proposal or engagement session in NYC? <em>I've done this 150+ times.</em><br>Let me make it easy.
-      </h2>
-      <p class="section-body">
-        Central Park has 843 acres. Weekend crowds can ruin any intimate moment. Golden hour lasts 40 minutes and changes by the week. Whether you're planning a surprise proposal or a couples engagement session — the logistics can feel overwhelming.<br><br>
-        I've photographed 150+ proposals and engagement sessions across New York and New Jersey — Central Park, DUMBO, Hoboken, Weehawken, Jersey City and 20+ other locations. I know every hidden corner, every lighting window, every spot where the crowd disappears. You tell me your date — I build the entire plan around it.
-      </p>
-    </div>
-    <div class="pain-cards reveal">
-      <div class="pain-card">
-        <div class="pain-card-q">"I have no idea where in Central Park to do it."</div>
-        <div class="pain-card-a">I scout 2–3 exact locations for your date, time, and the light conditions. You just choose the one that feels right. <strong>Location scouting is included.</strong></div>
-      </div>
-      <div class="pain-card">
-        <div class="pain-card-q">"What if she sees the photographer?"</div>
-        <div class="pain-card-a">I blend into the surroundings — to her, I'm just another person nearby. <strong>She'll never know I was there — until she sees the photos.</strong></div>
-      </div>
-      <div class="pain-card">
-        <div class="pain-card-q">"I don't know how to get her to the spot naturally."</div>
-        <div class="pain-card-a">I help you craft a believable cover story and timing plan. We coordinate everything over text — until you feel completely confident. <strong>Zero winging it.</strong></div>
-      </div>
-      <div class="pain-card">
-        <div class="pain-card-q">"We want engagement photos but don't know where to go or how to make it feel natural."</div>
-        <div class="pain-card-a">I suggest the location, guide you through every moment, and make it feel like a walk in the park — not a photoshoot. <strong>No awkward posing. Just you two.</strong></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-
 
 <!-- LOCATIONS SLIDER -->
 <section style="padding:80px 0;background:var(--white);">
@@ -684,14 +656,6 @@ function playHeroVSL(){
       <div class="loc-card"><div class="loc-img"><img src="Pier 17.jpg" alt="Pier 17" loading="lazy"></div><p class="loc-name">Pier 17</p><p class="loc-sub">Lower Manhattan · Waterfront</p></div>
       <div class="loc-card"><div class="loc-img"><img src="Jersey City.jpg" alt="Jersey City" loading="lazy"></div><p class="loc-name">Jersey City</p><p class="loc-sub">Manhattan Skyline Backdrop</p></div>
       <div class="loc-card"><div class="loc-img"><img src="Robert Wagner Park.jpg" alt="Robert Wagner Park" loading="lazy"></div><p class="loc-name">Robert Wagner Park</p><p class="loc-sub">Battery Park · Statue of Liberty View</p></div>
-      <div class="loc-card"><div class="loc-img"><img src="Pier 57.jpg" alt="Pier 57" loading="lazy"></div><p class="loc-name">Pier 57</p><p class="loc-sub">Hudson River · Sunset Magic</p></div>
-      <div class="loc-card"><div class="loc-img"><img src="Dumbo.jpg" alt="DUMBO" loading="lazy"></div><p class="loc-name">DUMBO</p><p class="loc-sub">Brooklyn · Bridge + Skyline</p></div>
-      <div class="loc-card"><div class="loc-img"><img src="NYC_Subway_Fulton.jpg" alt="NYC Subway" loading="lazy"></div><p class="loc-name">NYC Subway</p><p class="loc-sub">Fulton St · Urban & Editorial</p></div>
-      <div class="loc-card"><div class="loc-img"><img src="Brooklyn_Streets.jpg" alt="Brooklyn Streets" loading="lazy"></div><p class="loc-name">Brooklyn Streets</p><p class="loc-sub">Brownstone NYC · Candid & Real</p></div>
-      <div class="loc-card"><div class="loc-img"><img src="Central_Park_Lake_2.jpg" alt="Central Park Lake" loading="lazy"></div><p class="loc-name">Central Park Lake</p><p class="loc-sub">Central Park · Hidden Waterside</p></div>
-      <div class="loc-card"><div class="loc-img"><img src="Central_Park_Bethesda_2.jpg" alt="Bethesda Arcade" loading="lazy"></div><p class="loc-name">Bethesda Arcade</p><p class="loc-sub">Central Park · Arched Corridors</p></div>
-      <div class="loc-card"><div class="loc-img"><img src="Hudson_Yards_Christmas.jpg" alt="Hudson Yards" loading="lazy"></div><p class="loc-name">Hudson Yards</p><p class="loc-sub">Holiday Magic · Winter Proposals</p></div>
-
     </div>
 
     <!-- Arrows -->
@@ -765,34 +729,6 @@ function playHeroVSL(){
 #loc-track { user-select:none; }
 </style>
 
-<!-- PROCESS -->
-<section class="process-section">
-  <p class="section-label">How it works</p>
-  <h2 class="section-headline">From your first message to her <em>yes</em></h2>
-  <div class="process-steps">
-    <div class="process-step reveal">
-      <div class="step-num">01</div>
-      <div class="step-title">You reach out</div>
-      <div class="step-body">Tell me your date and your vision. I'll respond within a few hours — usually the same day — with everything we need to start planning.</div>
-    </div>
-    <div class="process-step reveal">
-      <div class="step-num">02</div>
-      <div class="step-title">We plan together</div>
-      <div class="step-body">I scout your location, advise on timing and light, and help you build a cover story that feels natural. All via text.</div>
-    </div>
-    <div class="process-step reveal">
-      <div class="step-num">03</div>
-      <div class="step-title">The session begins</div>
-      <div class="step-body">I'm already there when you arrive. Whether it's a surprise proposal or an engagement shoot — I read the moment and capture everything. Including the tears.</div>
-    </div>
-    <div class="process-step reveal">
-      <div class="step-num">04</div>
-      <div class="step-title">Photos in days, not weeks</div>
-      <div class="step-body">Your full gallery is delivered in 2-3 business days, with professionally edited photos following in 5-7 business days. The first photo you'll see is her face — the exact second she understood what was happening.</div>
-    </div>
-  </div>
-</section>
-
 <!-- ABOUT -->
 <section class="about-section">
   <div class="about-grid">
@@ -808,45 +744,46 @@ function playHeroVSL(){
         I don't coordinate shoots. I coordinate memories. The spot, the light, the cover story, the timing — I handle all of it. So when the moment arrives, you're not thinking about logistics. You're just there, fully present, with the person you love.<br><br>
         That's the only thing that matters.
       </p>
-      <p class="about-name">Agataprincely · NYC Proposal & Engagement Photographer</p>
+      <p class="about-name">Agataphotography · NYC Proposal & Engagement Photographer</p>
     </div>
   </div>
 </section>
 
-<!-- TESTIMONIALS -->
-<section class="testimonials-section">
-  <p class="section-label">What couples say</p>
-  <h2 class="section-headline">Real proposals. Real <em>reactions.</em></h2>
-  <div class="testi-grid">
-    <div class="testi-card reveal">
-      <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;">
-        <div style="font-size:13px;font-weight:600;color:var(--ink);">Ross F.</div>
-        <div style="font-size:11px;color:var(--mist);">Jan 27, 2025</div>
-        <div style="font-size:11px;font-weight:500;color:#00a650;letter-spacing:0.04em;">✓ Verified</div>
+<!-- FORM (second instance, after About) -->
+<section class="form-section" id="book2">
+  <div class="form-wrap">
+    <p class="section-label">Check availability</p>
+    <h2 class="section-headline">Ready to check your date?</h2>
+    <p class="form-intro">Send your name, number, and date — I'll text you back within a few hours. No commitment, no sales pitch.</p>
+
+    <form class="leadForm" name="proposals" method="POST" data-netlify="true" netlify netlify-honeypot="bot-field">
+      <input type="hidden" name="form-name" value="proposals"/>
+      <p style="display:none"><input name="bot-field"/></p>
+      <div class="form-grid">
+        <div class="form-group full">
+          <label>Your Name</label>
+          <input type="text" name="name" placeholder="First name" required/>
+        </div>
+        <div class="form-group">
+          <label>Phone (for texting)</label>
+          <input type="tel" name="phone" placeholder="+1 (858) 353-6287" required/>
+        </div>
+        <div class="form-group">
+          <label>Proposal Date</label>
+          <input type="date" name="date" required/>
+        </div>
       </div>
-      <div class="testi-stars">★★★★★</div>
-      <div class="testi-quote">"Agata was absolutely incredible! From our first communication to the day of the shoot, she was kind, professional, and incredibly thoughtful. It felt like spending time with a friend who just happens to be an amazing photographer. The final photos exceeded all our expectations — stunning and captured the moment perfectly. 12/10 experience!"</div>
-      <div class="testi-author">— Ross F., Verified Client</div>
+      <button type="submit" class="form-submit">Send My Request →</button>
+      <p class="form-note">I respond within a few hours. Your information is never shared.</p>
+    </form>
+
+    <div class="form-wa">
+      Or text me directly: <a href="sms:+18583536287">+1 (858) 353-6287</a>
     </div>
-    <div class="testi-card reveal">
-      <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;">
-        <div style="font-size:13px;font-weight:600;color:var(--ink);">David K.</div>
-        <div style="font-size:11px;color:var(--mist);">The Mall, Central Park</div>
-        <div style="font-size:11px;font-weight:500;color:#00a650;letter-spacing:0.04em;">✓ Verified</div>
-      </div>
-      <div class="testi-stars">★★★★★</div>
-      <div class="testi-quote">"I had no idea where to even start. Agata helped me choose the spot, the time, even what to say to get my girlfriend there. The whole thing was flawless. Not a single tourist in frame."</div>
-      <div class="testi-author">— David K., The Mall in Central Park</div>
-    </div>
-    <div class="testi-card reveal">
-      <div style="display:flex;align-items:center;gap:10px;margin-bottom:14px;">
-        <div style="font-size:13px;font-weight:600;color:var(--ink);">James T.</div>
-        <div style="font-size:11px;color:var(--mist);">Conservatory Garden</div>
-        <div style="font-size:11px;font-weight:500;color:#00a650;letter-spacing:0.04em;">✓ Verified</div>
-      </div>
-      <div class="testi-stars">★★★★★</div>
-      <div class="testi-quote">"The photos arrived and I couldn't stop shaking. Agata has a gift for capturing emotion — the real, unscripted kind. Every photo felt like a memory, not a photoshoot."</div>
-      <div class="testi-author">— James T., Conservatory Garden</div>
+
+    <div class="form-success formSuccess">
+      <h3>Message received ✦</h3>
+      <p>I'll be in touch within a few hours to start planning your perfect moment. Check your email — or expect a text from me soon.</p>
     </div>
   </div>
 </section>
@@ -855,8 +792,6 @@ function playHeroVSL(){
 <section class="offer-section" id="packages">
   <p class="section-label">Packages</p>
   <h2 class="section-headline">Choose your <em>experience</em></h2>
-
-
 
   <div class="offer-cards">
 
@@ -872,7 +807,6 @@ function playHeroVSL(){
         <li>Full gallery in 2-3 days, edited photos in 5-7 days</li>
         <li>Add-on: full iPhone video of the moment +$50</li>
       </ul>
-      <a href="#book" class="offer-btn">Book This Package</a>
     </div>
 
     <!-- The Story -->
@@ -888,7 +822,6 @@ function playHeroVSL(){
         <li>Full gallery in 2-3 days, edited photos in 5-7 days</li>
         <li>Add-on: full iPhone video of the moment +$50</li>
       </ul>
-      <a href="#book" class="offer-btn">Book This Package</a>
     </div>
 
     <!-- The Full Experience -->
@@ -905,150 +838,20 @@ function playHeroVSL(){
         <li>Full gallery in 2-3 days, edited photos in 5-7 days</li>
         <li>Add-on: full iPhone video of the moment +$50</li>
       </ul>
-      <a href="#book" class="offer-btn">Book This Package</a>
     </div>
 
   </div>
 </section>
-
-<!-- URGENCY -->
-<section class="urgency-section">
-  <div class="reveal">
-    <div class="urgency-eyebrow">⚠ Fall 2026 — Spots Going Fast</div>
-    <h2 class="urgency-headline">Fall proposal and engagement dates are booking now</h2>
-    <p class="urgency-sub">September and October weekends in Central Park fill up weeks in advance. Right now — the last week of July — people are booking their fall proposals and engagement sessions. Every year, the couples who wait find their date is gone. Check yours before someone else takes it.</p>
-  </div>
-  <a href="#book" class="urgency-cta">Check If My Date Is Open →</a>
-</section>
-
-<!-- FORM -->
-<section class="form-section" id="book">
-  <div class="form-wrap">
-    <p class="section-label">Check availability</p>
-    <h2 class="section-headline">Is your date still available?</h2>
-    <p class="form-intro">Fill in your date below — I'll tell you if it's still open and what we can do together. No commitment. No sales pitch. Just a quick answer.</p>
-
-    <form id="leadForm" name="proposals" method="POST" data-netlify="true" netlify netlify-honeypot="bot-field">
-      <input type="hidden" name="form-name" value="proposals"/>
-      <p style="display:none"><input name="bot-field"/></p>
-      <div class="form-grid">
-        <div class="form-group">
-          <label for="name">Your Name</label>
-          <input type="text" id="name" name="name" placeholder="First name" required/>
-        </div>
-        <div class="form-group">
-          <label for="phone">Phone (for texting)</label>
-          <input type="tel" id="phone" name="phone" placeholder="+1 (858) 353-6287" required/>
-        </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" placeholder="your@email.com" required/>
-        </div>
-        <div class="form-group">
-          <label for="date">Proposal Date</label>
-          <input type="date" id="date" name="date" required/>
-        </div>
-        <div class="form-group">
-          <label for="session">Session Type</label>
-          <select id="session" name="session">
-            <option value="">Select type</option>
-            <option value="proposal">Surprise Proposal</option>
-            <option value="engagement">Engagement Session</option>
-            <option value="both">Proposal + Engagement</option>
-            <option value="unsure">Not sure yet</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="package">Package Interest</label>
-          <select id="package" name="package">
-            <option value="">Select a package</option>
-            <option value="the-moment">The Moment — $450 ★</option>
-            <option value="the-story">The Story — $600</option>
-            <option value="full-experience">The Full Experience — $750</option>
-            <option value="unsure">Not sure yet</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="location">Preferred Location</label>
-          <select id="location" name="location">
-            <option value="">I need help choosing</option>
-            <option value="bow">Bow Bridge</option>
-            <option value="bethesda">Bethesda Fountain</option>
-            <option value="mall">The Mall / Literary Walk</option>
-            <option value="conservatory">Conservatory Garden</option>
-            <option value="other">Other / Surprise me</option>
-          </select>
-        </div>
-        <div class="form-group full">
-          <label for="message">Tell me about your vision</label>
-          <textarea id="message" name="message" placeholder="Tell me about your partner, your idea, any concerns — the more I know, the better I can help..."></textarea>
-        </div>
-      </div>
-      <button type="submit" class="form-submit">Send My Request →</button>
-      <p class="form-note">I respond within a few hours. Your information is never shared.</p>
-    </form>
-
-    <div class="form-wa">
-      Or text me directly: <a href="sms:+18583536287">+1 (858) 353-6287</a>
-    </div>
-
-    <div class="form-success" id="formSuccess">
-      <h3>Message received ✦</h3>
-      <p>I'll be in touch within a few hours to start planning your perfect moment. Check your email — or expect a text from me soon.</p>
-    </div>
-  </div>
-</section>
-
-<!-- FAQ -->
-<section class="faq-section">
-  <p class="section-label">Questions</p>
-  <h2 class="section-headline">Everything you're <em>wondering about</em></h2>
-  <div class="faq-list">
-    <div class="faq-item">
-      <button class="faq-q">What if it rains on the day? <span class="faq-icon">+</span></button>
-      <div class="faq-a">We'll plan a backup indoor or covered location in advance. If you prefer, we can reschedule at no extra charge. Rainy day shoots can actually be incredibly romantic — I'll guide you either way.</div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-q">Will she notice you? <span class="faq-icon">+</span></button>
-      <div class="faq-a">No. I blend in naturally — just another person nearby. I know exactly how to position myself to stay completely invisible while capturing every detail. I've done this 150+ times — your partner will have no idea I'm there until she sees the photos.</div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-q">Can you help me choose the location? <span class="faq-icon">+</span></button>
-      <div class="faq-a">Absolutely. Location scouting and recommendations are included in every package. I'll suggest 2–3 spots based on your date, the time of day, and the light — plus what feels right for you as a couple.</div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-q">How do I get her to the spot without spoiling it? <span class="faq-icon">+</span></button>
-      <div class="faq-a">We'll craft a believable cover story together over text before the day. I've helped hundreds of partners navigate this exact challenge — none of them have been found out.</div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-q">When will I receive the photos? <span class="faq-icon">+</span></button>
-      <div class="faq-a">Your full gallery is delivered in 2-3 business days, with professionally edited photos following in 5-7 business days. On premium packages, you receive a same-day preview of 5 images so you can share with family immediately.</div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-q">Can I book last minute? <span class="faq-icon">+</span></button>
-      <div class="faq-a">If my schedule allows, yes. Reach out as early as possible — fall weekends (October especially) book out weeks in advance. The sooner you contact me, the more options we have.</div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-q">What is your cancellation policy? <span class="faq-icon">+</span></button>
-      <div class="faq-a">Cancel or reschedule at least 2 weeks before your session at no charge. The deposit is non-refundable but can be applied to a rescheduled date within 3 months.</div>
-    </div>
-    <div class="faq-item">
-      <button class="faq-q">Do you photograph same-sex proposals? <span class="faq-icon">+</span></button>
-      <div class="faq-a">Absolutely. All couples are warmly welcomed. Love is love — I'm here to document it, whatever form it takes.</div>
-    </div>
-  </div>
-</section>
-
 
 <!-- FOOTER -->
 <footer>
-  <div class="footer-logo">Agataprincely</div>
+  <div class="footer-logo">Agataphotography</div>
   <div class="footer-links">
     <a href="https://www.instagram.com/agataphotography_nyc/" target="_blank">Instagram</a>
     <a href="#packages">Packages</a>
     <a href="#book">Contact</a>
   </div>
-  <div class="footer-copy">© 2026 Agataprincely · New York City</div>
+  <div class="footer-copy">© 2026 Agataphotography · New York City</div>
 </footer>
 
 <script>
@@ -1069,12 +872,15 @@ document.querySelectorAll('.faq-q').forEach(btn => {
   });
 });
 
-const form = document.getElementById('leadForm');
-if (form) {
+// Supports multiple lead forms on the page (top hero form + second form after About)
+document.querySelectorAll('form.leadForm').forEach(function(form, formIndex) {
+  var formLocation = formIndex === 0 ? 'top' : 'bottom';
+  var successEl = form.parentElement.querySelector('.formSuccess');
+
   form.addEventListener('submit', function(e) {
     e.preventDefault();
-    if (typeof fbq === 'function') { fbq('trackCustom', 'FormSubmitAttempted'); }
-    const data = new FormData(form);
+    if (typeof fbq === 'function') { fbq('trackCustom', 'FormSubmitAttempted', { location: formLocation }); }
+    var data = new FormData(form);
     fetch('/', {
       method: 'POST',
       headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
@@ -1082,40 +888,46 @@ if (form) {
     })
     .then(function(res) {
       if (!res.ok) throw new Error('Bad response: ' + res.status);
-      if (typeof fbq === 'function') { fbq('track', 'Lead'); }
+      if (typeof fbq === 'function') { fbq('track', 'Lead', { location: formLocation }); }
       form.style.display = 'none';
-      document.getElementById('formSuccess').style.display = 'block';
+      if (successEl) successEl.style.display = 'block';
     })
     .catch(function() {
-      if (typeof fbq === 'function') { fbq('trackCustom', 'FormSubmitError'); }
+      if (typeof fbq === 'function') { fbq('trackCustom', 'FormSubmitError', { location: formLocation }); }
       alert('Something went wrong sending your request. Please text me directly at +1 (858) 353-6287.');
     });
   });
 
-  // Form Started — fires once, on first interaction with the first field
-  var nameField = document.getElementById('name');
+  var nameField = form.querySelector('[name="name"]');
   if (nameField) {
     nameField.addEventListener('focus', function() {
-      if (typeof fbq === 'function') { fbq('trackCustom', 'FormStarted'); }
+      if (typeof fbq === 'function') { fbq('trackCustom', 'FormStarted', { location: formLocation }); }
     }, { once: true });
   }
-}
 
-// Form Viewed — fires once, when the #book section enters the viewport
-var bookSection = document.getElementById('book');
-if (bookSection) {
+  ['name', 'phone', 'date'].forEach(function(fieldName) {
+    var field = form.querySelector('[name="' + fieldName + '"]');
+    if (field) {
+      field.addEventListener('input', function() {
+        if (typeof fbq === 'function') { fbq('trackCustom', 'FieldFilled', { field: fieldName, location: formLocation }); }
+      }, { once: true });
+    }
+  });
+});
+
+document.querySelectorAll('#book, #book2').forEach(function(section) {
+  var loc = section.id === 'book' ? 'top' : 'bottom';
   var formViewObserver = new IntersectionObserver(function(entries) {
     entries.forEach(function(entry) {
       if (entry.isIntersecting) {
-        if (typeof fbq === 'function') { fbq('trackCustom', 'FormViewed'); }
+        if (typeof fbq === 'function') { fbq('trackCustom', 'FormViewed', { location: loc }); }
         formViewObserver.unobserve(entry.target);
       }
     });
   }, { threshold: 0.3 });
-  formViewObserver.observe(bookSection);
-}
+  formViewObserver.observe(section);
+});
 
-// CTA Clicks — tracks intent signals across the page, before the form
 function trackCTA(label) {
   return function() {
     if (typeof fbq === 'function') { fbq('trackCustom', 'CTAClick', { button: label }); }
@@ -1125,17 +937,9 @@ document.querySelectorAll('.nav-cta').forEach(function(el) {
   el.addEventListener('click', trackCTA('check_availability_nav'));
 });
 document.querySelectorAll('.hero-cta-group .btn-primary').forEach(function(el) {
-  el.addEventListener('click', trackCTA('plan_my_proposal_hero'));
-});
-document.querySelectorAll('.offer-btn').forEach(function(el, i) {
-  var names = ['book_the_moment', 'book_the_story', 'book_full_experience'];
-  el.addEventListener('click', trackCTA(names[i] || 'book_package'));
-});
-document.querySelectorAll('.urgency-cta').forEach(function(el) {
-  el.addEventListener('click', trackCTA('check_date_urgency'));
+  el.addEventListener('click', trackCTA('see_packages_hero'));
 });
 </script>
-
 <!-- 100% privacy-first analytics (Simple Analytics) -->
 <script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
 </body>
