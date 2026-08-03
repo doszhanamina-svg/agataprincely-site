@@ -442,11 +442,15 @@ nav {
 .form-group textarea {
   font-family: var(--sans);
   font-size: 15px; font-weight: 400;
+  width: 100%; box-sizing: border-box;
   padding: 13px 16px; border: 1.5px solid var(--stone);
   background: var(--white); color: var(--ink);
   outline: none; transition: border-color 0.2s;
   -webkit-appearance: none; appearance: none;
   border-radius: 0;
+}
+.form-group input[type="date"] {
+  min-height: 46px;
 }
 .form-group input:focus,
 .form-group select:focus,
@@ -846,12 +850,10 @@ footer {
 <!-- FOOTER -->
 <footer>
   <div class="footer-logo">Agataphotography</div>
-  <div class="footer-links">
-    <a href="https://www.instagram.com/agataphotography_nyc/" target="_blank">Instagram</a>
-    <a href="#packages">Packages</a>
-    <a href="#book">Contact</a>
+  <div class="footer-copy" style="display:flex;align-items:center;gap:20px;">
+    <a href="https://www.instagram.com/agataphotography_nyc/" target="_blank" style="color:var(--mist);text-decoration:none;font-size:12px;letter-spacing:0.08em;text-transform:uppercase;transition:color 0.2s;">Instagram</a>
+    <span>© 2026 Agataphotography · New York City</span>
   </div>
-  <div class="footer-copy">© 2026 Agataphotography · New York City</div>
 </footer>
 
 <script>
