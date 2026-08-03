@@ -165,6 +165,10 @@ nav {
   position: relative; overflow: hidden;
   background: #D8D3CC;
 }
+.hero-photo-inline {
+  width: 100%; height: 280px;
+  overflow: hidden; margin-top: 32px;
+}
 .hero-video-wrap { position: absolute; inset: 0; }
 .hero-video-wrap video { width: 100%; height: 100%; object-fit: cover; }
 .video-placeholder {
@@ -514,9 +518,9 @@ footer {
   .nav-cta { padding: 8px 12px; font-size: 10.5px; white-space: nowrap; letter-spacing: 0.03em; }
 
   .hero { grid-template-columns: 1fr; min-height: auto; }
-  .hero-left { padding: 40px 24px 48px; }
-  .hero-headline { font-size: clamp(34px, 9vw, 48px); }
-  .hero-headline-accent { font-size: clamp(32px, 8vw, 44px); }
+  .hero-left { height: 480px; }
+  .hero-left > div { padding: 28px 24px !important; }
+  .hero-headline { font-size: clamp(26px, 7vw, 34px); }
   .hero-right { height: auto; overflow: visible; padding: 40px 24px !important; }
   .hero-trust { gap: 20px; }
 
@@ -565,16 +569,12 @@ footer {
 
 <!-- HERO -->
 <section class="hero">
-  <div class="hero-left">
-    <p class="hero-eyebrow">New York City · Surprise Proposals · Engagement Sessions</p>
-    <h1 class="hero-headline">You focus on the question.</h1>
-    <span class="hero-headline-accent">I handle everything else.</span>
-    <span class="hero-price-badge">Packages from $450</span>
-    <p class="hero-sub">
-      Whether it's a surprise proposal or an engagement session — I scout the spot, find the light, and capture the moment exactly as it happens. Real. Unscripted. Yours.
-    </p>
-    <div class="hero-cta-group">
-      <a href="#packages" class="btn-primary">See Packages & Pricing</a>
+  <div class="hero-left" style="position:relative;padding:0;overflow:hidden;">
+    <img src="hero-proposal-photo.jpg" alt="Real proposal captured in Central Park" loading="eager" fetchpriority="high" style="position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 30%;">
+    <div style="position:absolute;inset:0;background:linear-gradient(0deg, rgba(0,0,0,0.55) 0%, rgba(0,0,0,0.05) 45%);"></div>
+    <div style="position:relative;z-index:2;height:100%;display:flex;flex-direction:column;justify-content:flex-end;padding:56px;">
+      <h1 class="hero-headline" style="max-width:480px;color:var(--white);">I handle everything, so you can focus on the question.</h1>
+      <span class="hero-price-badge" style="background:rgba(255,255,255,0.92);">Packages from $450 · New York City</span>
     </div>
   </div>
   <div class="hero-right" id="book" style="background:var(--white);display:flex;align-items:center;justify-content:center;padding:56px 44px;">
@@ -743,6 +743,7 @@ footer {
       <p class="section-label">Your photographer</p>
       <h2 class="section-headline">Hi, I'm <em>Agata.</em></h2>
       <p class="section-body">
+        Whether it's a surprise proposal or an engagement session, I scout the spot, find the light, and capture the moment exactly as it happens. Real. Unscripted. Yours.<br><br>
         I've been photographing proposals and engagements in New York for years — and I still get butterflies every single time he gets down on one knee.<br><br>
         150+ couples trusted me with their most important moment. Some knew I was coming. Some had no idea. Either way, my job is the same: disappear into the background, read the moment before it happens, and click at exactly the right second.<br><br>
         I don't coordinate shoots. I coordinate memories. The spot, the light, the cover story, the timing — I handle all of it. So when the moment arrives, you're not thinking about logistics. You're just there, fully present, with the person you love.<br><br>
